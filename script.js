@@ -23,10 +23,12 @@ continueBtn.onclick = () => {
   quizBox.classList.add("active");
   showQuestions(0);
   questionCounter(1);
+  headerScore();
 };
 
 let questionCount = 0;
 let questionNumb = 1;
+let userScore = 0;
 
 const nextBtn = document.querySelector(".next-btn");
 
@@ -64,15 +66,35 @@ function showQuestions(index) {
 function optionSelected(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
+  let allOptions = optionList.children.length;
 
   if (userAnswer == correctAnswer) {
     console.log("anwser is correct");
+    answer.classList.add("correct");
+    userScore += 1;
+    headerScore();
   } else {
     console.log("answer is wrong");
+    answer.classList.add("incorrect");
+
+    for (let i = 0; i < allOptions; i++) {
+      if (optionList.children[i].textContent == correctAnswer) {
+        optionList.children[i].setAttribute("class", "option correct");
+      }
+    }
+  }
+
+  for (let i = 0; i < allOptions; i++) {
+    optionList.children[i].classList.add("disabled");
   }
 }
 
 function questionCounter(index) {
   const questionTotal = document.querySelector(".question-total");
   questionTotal.textContent = `${index} of ${questions.length} Questions`;
+}
+
+function headerScore() {
+  const headerScoreText = document.querySelector(".header-score");
+  headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }

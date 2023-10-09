@@ -290,6 +290,16 @@ body {
   border-color: seagreen;
 }
 
+.option-list .option.incorrect {
+  background: #09001d;
+  color: #a60045;
+  border-color: #a60045;
+}
+
+.option-list .option.disabled {
+  pointer-events: none;
+}
+
 .quiz-box .quiz-footer {
   display: flex;
   justify-content: space-between;
