@@ -13,6 +13,7 @@ const tryAgainAudio = document.getElementById("tryagain-audio");
 const scoreAudio = document.getElementById("score-audio");
 const homeAudio = document.getElementById("home-audio");
 const bgAudio = document.getElementById("bg-audio");
+const q9Img = document.getElementById("q9-img");
 
 startBtn.onclick = () => {
   bgAudio.play();
@@ -28,6 +29,8 @@ exitBtn.onclick = () => {
 };
 
 continueBtn.onclick = () => {
+  bgAudio.pause();
+  bgAudio.currentTime = 0;
   audio.play();
   quizSection.classList.add("active");
   popupInfo.classList.remove("active");
@@ -94,6 +97,12 @@ const optionList = document.querySelector(".option-list");
 function showQuestions(index) {
   const questionText = document.querySelector(".question-text");
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+
+  if (index === 8) {
+    q9Img.style.display = "block";
+  } else {
+    q9Img.style.display = "none";
+  }
 
   let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
       <div class="option"><span>${questions[index].options[1]}</span></div>
@@ -166,7 +175,7 @@ function showResultBox() {
     circularProgress.style.background = `conic-gradient(#c40094 ${
       progressStartValue * 3.6
     }deg, rgba(255, 255, 255, 0.1) 0deg)`;
-    if (progressStartValue == progressEndValue) {
+    if (progressStartValue >= progressEndValue) {
       clearInterval(progress);
     }
   }, speed);

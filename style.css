@@ -273,7 +273,7 @@ body {
 }
 
 .quiz-box .question-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   padding: 30px 0 20px;
 }
@@ -452,6 +452,14 @@ body {
 .buttons button:nth-child(2):hover {
   background: #c40094;
   color: white;
+}
+
+#q9-img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 100px;
+  border: 1px solid #c40094;
+  border-radius: 6px;
 }
 
 @media (min-aspect-ratio: 16/9) {
