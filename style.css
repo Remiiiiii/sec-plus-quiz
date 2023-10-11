@@ -244,7 +244,7 @@ body {
   transform: scale(1);
   transition: 1s ease;
   transition-delay: 1s;
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 .quiz-box h1 {
