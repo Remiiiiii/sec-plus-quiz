@@ -46,8 +46,8 @@ let questions = [
     numb: 5,
     question:
       "An administrator recently installed an IDS to help reduce the impact of security incidents. Which of the following BEST identifies the control type of an IDS?",
-    answer: "D. Detecive",
-    options: ["A. Preventive", "B. Physical", "C. Deterrent", "D. Detecive"],
+    answer: "D. Detective",
+    options: ["A. Preventive", "B. Physical", "C. Deterrent", "D. Detective"],
   },
   {
     numb: 6,
