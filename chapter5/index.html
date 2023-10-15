@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security+ Quiz Chapter 5</title>
+    <link rel="stylesheet" href="../chapter3/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="../index.html" class="logo">CompTIA Sec+ Quiz</a>
+      </header>
+      <div class="container">
+      </video>      
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>CompTIA Sec+ Quiz</h1>
+            <div class="quiz-header">
+              <span>Chapter 5: Securing Hosts and Data</span>
+              <span class="header-score"></span>
+            </div>
+            <h2 class="question-text"></h2>
+            <div class="option-list">
+            </div>
+            <div class="quiz-footer">
+              <span class="question-total">1 of 15 Questions</span>
+              <button class="next-btn">Next</button>
+            </div>
+          </div>
+          <div class="result-box">
+            <h2>Quiz Result!</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+              <span class="score-text">Your Score 0 out of 15</span>
+            </div>
+            <div class="buttons">
+              <button class="tryAgain-btn">Try again</button>
+              <button class="goHome-btn">Introduction</button>
+            </div>
+          </div>
+        </section>
+        <section class="home">
+          <div class="home-content">
+            <h1>Chapter 4</h1>
+            <h2>Securing Hosts and Data</h2><br>
+            <p>
+              In this chapter, you'll learn about different methods used to implementsystems securely. This includes hardening endpoints when deploying themand using change management policies to keep them secure.More and more organizations are using cloud resources, and thischapter summarizes the important cloud concepts. Additionally, the use ofmobile devices has exploded in the last few years, with more and moreorganizations allowing employees to connect mobile devices to thenetwork. This results in many challenges for an organization, but mobiledevice management tools help administrators handle these challenges. Thischapter also covers the security implications of embedded systems andInternet of Things (IoT) devices.
+            </p>
+            <div class="button-container">
+              <button class="home-btn">
+                Home
+              </button>
+              <button class="start-btn">
+                Start Quiz
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="custom-dialog" class="hidden">
+        <div class="dialog-content">
+          <h2>Custom Alert</h2>
+          <p>This is a custom alert message.</p>
+          <button id="close-dialog">OK</button>
+        </div>
+      </div>
+    </main>
+    <div class="popup-info">
+      <h2>Quiz Guide</h2>
+      <span class="info">1. Take your time to read each question carefully.</span><br>
+      <span class="info">2. If you're unsure, use the process of elimination.</span><br>
+      <span class="info">3. Allocate your time wisely.</span><br>
+      <span class="info">4. Answer each question even if you're unsure.</span><br>
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+      </div>
+    </div>
+    <audio id="audio" src="../mp3/startbell2.mp3"></audio>
+    <audio id="tryagain-audio" src="../mp3/tryagain.mp3"></audio>
+    <audio id="score-audio" src="../mp3/score.mp3"></audio>
+    <audio id="home-audio" src="../mp3/gohome.mp3"></audio>
+    <script src="../chapter3/questions.js"></script>
+    <script src="../chapter3/script.js"></script>
+  </body>
+</html>

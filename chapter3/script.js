@@ -11,17 +11,21 @@ const homeBtn = document.querySelector(".goHome-btn");
 const audio = document.getElementById("audio");
 const tryAgainAudio = document.getElementById("tryagain-audio");
 const scoreAudio = document.getElementById("score-audio");
+const homeButton = document.querySelector(".home-btn");
 const homeAudio = document.getElementById("home-audio");
-const bgAudio = document.getElementById("bg-audio");
-const q9Img = document.getElementById("q-img");
-const chapterSelect = document.getElementById("chapter-select");
+const qImg = document.getElementById("q-img");
 
 startBtn.onclick = () => {
   audio.play();
+  popupInfo.classList.add("active");
+  main.classList.add("active");
+};
+
+homeButton.onclick = () => {
+  audio.play();
   setTimeout(() => {
-    window.location.href = "./chapter1/Chapter1.html";
+    window.location.href = "../index.html";
   }, 800);
-  bgAudio.play();
 };
 
 exitBtn.onclick = () => {
@@ -31,8 +35,6 @@ exitBtn.onclick = () => {
 };
 
 continueBtn.onclick = () => {
-  bgAudio.pause();
-  bgAudio.currentTime = 0;
   audio.play();
   quizSection.classList.add("active");
   popupInfo.classList.remove("active");
@@ -44,6 +46,7 @@ continueBtn.onclick = () => {
 };
 
 tryAgainBtn.onclick = () => {
+  tryAgainAudio.play();
   quizBox.classList.add("active");
   nextBtn.classList.remove("active");
   resultBox.classList.remove("active");
@@ -74,20 +77,6 @@ homeBtn.onclick = () => {
   headerScore();
 };
 
-chapterSelect.addEventListener("change", function () {
-  var selectedChapter = this.value;
-
-  if (selectedChapter === "chapter-2") {
-    window.location.href = "./chapter2/index.html";
-  }
-  if (selectedChapter === "chapter-3") {
-    window.location.href = "./chapter3/index.html";
-  }
-  if (selectedChapter === "chapter-4") {
-    window.location.href = "./chapter4/index.html";
-  }
-});
-
 let questionCount = 0;
 let questionNumb = 1;
 let userScore = 0;
@@ -114,10 +103,19 @@ function showQuestions(index) {
   const questionText = document.querySelector(".question-text");
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
 
-  let optionTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
-      <div class="option"><span>${questions[index].options[1]}</span></div>
-      <div class="option"><span>${questions[index].options[2]}</span></div>
-      <div class="option"><span>${questions[index].options[3]}</span></div>`;
+  if (index === 3) {
+    qImg.style.display = "block";
+  } else {
+    qImg.style.display = "none";
+  }
+
+  quizBox.style.width = "50%";
+
+  let optionTag = "";
+
+  for (let i = 0; i < questions[index].options.length; i++) {
+    optionTag += `<div class="option"><span>${questions[index].options[i]}</span></div>`;
+  }
 
   optionList.innerHTML = optionTag;
 

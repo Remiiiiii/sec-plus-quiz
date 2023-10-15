@@ -81,6 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #09001d;
 }
 
 .home-content {
@@ -104,10 +105,13 @@ body {
   font-weight: 500;
 }
 
-.home-content .start-btn {
+.button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.home-btn {
   width: 190px;
   height: 55px;
   background: #c40094;
@@ -121,7 +125,24 @@ body {
   font-weight: 600;
   cursor: pointer;
   transition: 0.5s;
-  text-decoration: none;
+  margin-right: 5px;
+}
+
+.home-content .start-btn {
+  width: 190px;
+  height: 55px;
+  background: #c40094;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #c40094;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 5px;
 }
 
 .home-content .start-btn:hover {
@@ -459,7 +480,7 @@ body {
   color: white;
 }
 
-#q-img {
+#q9-img {
   max-width: 40%;
   height: auto;
   margin-right: 100px;
@@ -487,10 +508,21 @@ body {
   font-size: 16px; /* Set the font size of options */
 }
 
-/* Style the <option> tags on hover */
-#chapter-select option:hover {
-  background-color: #c40094; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+/* Define the custom button class styles */
+.custom-swal-confirm-button {
+  width: 190px;
+  height: 55px;
+  background: #c40094;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #c40094;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 @media (min-aspect-ratio: 16/9) {

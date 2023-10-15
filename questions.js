@@ -33,7 +33,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "Your organization hosts an e-commerce web server selling digital products. The server randomly experiences a high volume of sales and usage, which causes spikes in resource usage. These spikes occasionally take the server down. Which of the following should be implemented to prevent these outages",
+      "Your organization hosts an e-commerce web server selling digital products. The server randomly experiences a high volume of sales and usage, which causes spikes in resource usage. These spikes occasionally take the server down. Which of the following should be implemented to prevent these outages?",
     answer: "A. Elasticity",
     options: [
       "A. Elasticity",
