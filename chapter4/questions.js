@@ -39,7 +39,7 @@ let questions = [
       "A. She can use this file to retrieve the passwords if she forgets them",
       "B. This file will divert attackers from the live network",
       "C. The document is a honeyfile",
-      "D. The file is needed by an application to run when the system starts.",
+      "D. The file is needed by an application to run when the system starts",
     ],
   },
   {
