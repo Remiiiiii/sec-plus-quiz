@@ -147,7 +147,7 @@ function optionSelected(answer) {
     if (questions[questionCount].answer.includes(userAnswer)) {
       console.log("Answer is correct");
       answer.classList.add("correct");
-      userScore += 1;
+      userScore += 0.5;
       headerScore();
     } else {
       console.log("Answer is wrong");

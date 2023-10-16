@@ -225,7 +225,7 @@ body {
 
 .popup-info .btn-group .info-btn:nth-child(2):hover {
   background: #950170;
-  border-color: #950170;
+  border-color: #d8c2d3;
 }
 
 .quiz-section {
@@ -239,7 +239,6 @@ body {
   transition: 0.8s ease-in-out;
   transition-delay: 0.25s;
   z-index: 100;
-  overflow-y: auto;
 }
 
 .quiz-section.active {
@@ -480,10 +479,10 @@ body {
   color: white;
 }
 
-#q-img {
+#q9-img {
   max-width: 40%;
   height: auto;
-  margin-right: 50px;
+  margin-right: 100px;
   border: 1px solid #c40094;
   border-radius: 6px;
 }
@@ -508,6 +507,7 @@ body {
   font-size: 16px; /* Set the font size of options */
 }
 
+/* Define the custom button class styles */
 .custom-swal-confirm-button {
   width: 190px;
   height: 55px;
