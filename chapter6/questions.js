@@ -29,7 +29,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "An attacker recently attacked a web server hosted by your company. After investigating the attack, security professionals determined that the      attacker used a previously unknown application exploit. Which of thefollowing BEST identifies this attack?",
+      "An attacker recently attacked a web server hosted by your company. After investigating the attack, security professionals determined that the      attacker used a previously unknown application exploit. Which of the following BEST identifies this attack?",
     answer: "B. Zero-day attack",
     options: [
       "A. Buffer overflow",
@@ -41,7 +41,7 @@ let questions = [
   {
     numb: 5,
     question:
-      "After Bart logged on to his computer, he was unable to access any data. Instead, his screen displayed a message indicating that unless he made apayment, his hard drive would be formatted, and he'd permanently lose access to his data. What does this indicate?",
+      "After Bart logged on to his computer, he was unable to access any data. Instead, his screen displayed a message indicating that unless he made a payment, his hard drive would be formatted, and he'd permanently lose access to his data. What does this indicate?",
     answer: "B. Ransomware",
     options: ["A. Keylogger", "B. Ransomware", "C. Backdoor", "D. Trojan"],
   },
@@ -50,12 +50,12 @@ let questions = [
     question:
       "Recently, malware on a computer at the Monty Burns Casino destroyed several important files after it detected that Homer was no longer employed at the casino. Which of the following BEST identifies this malware?",
     answer: "A. Logic bomb",
-    options: ["A. Logic bomb", "B. Rootkit", "C. BackdoorD. Spyware"],
+    options: ["A. Logic bomb", "B. Rootkit", "C. Backdoor", "D. Spyware"],
   },
   {
     numb: 7,
     question:
-      "Maggie was on the programming team that developed an application used by your Human Resources department. Personnel use this application to store and manage employee data. Maggie programmed in the ability to access this application with a username and password that only she knows to perform remote maintenance on the application if necessary. Which ofthe following does this describe?",
+      "Maggie was on the programming team that developed an application used by your Human Resources department. Personnel use this application to store and manage employee data. Maggie programmed in the ability to access this application with a username and password that only she knows to perform remote maintenance on the application if necessary. Which of the following does this describe?",
     answer: "C. Backdoor",
     options: ["A. Virus", "B. Worm", "C. Backdoor", "D. Trojan"],
   },
@@ -64,7 +64,7 @@ let questions = [
     question:
       "Homer complained of abnormal activity on his workstation. After investigating, an administrator discovered his workstation connects to systems outside the organization's internal network using uncommon ports.The administrator discovered the workstation is also running several hidden processes. Which of the following choices BEST describes this activity?",
     answer: "A. Rootkit",
-    options: ["A. Rootkit", "B. Backdoor", "C. SpamD. Trojan"],
+    options: ["A. Rootkit", "B. Backdoor", "C. Spam", "D. Trojan"],
   },
   {
     numb: 9,
