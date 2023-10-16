@@ -13,7 +13,6 @@ const tryAgainAudio = document.getElementById("tryagain-audio");
 const scoreAudio = document.getElementById("score-audio");
 const homeButton = document.querySelector(".home-btn");
 const homeAudio = document.getElementById("home-audio");
-const q11Img = document.getElementById("q-img");
 
 startBtn.onclick = () => {
   audio.play();

@@ -480,14 +480,6 @@ body {
   color: white;
 }
 
-#q-img {
-  max-width: 40%;
-  height: auto;
-  margin-right: 50px;
-  border: 1px solid #c40094;
-  border-radius: 6px;
-}
-
 /* Style the <select> element */
 #chapter-select {
   width: 100%; /* Set the width of the dropdown */

@@ -29,7 +29,7 @@ let questions = [
     numb: 4,
     question:
       "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:**nslookup -querytype=mx gcgapremium.com** You then see these results, on the left side of your screen. What does this tell you?",
-    answer: "",
+    answer: "C. The mx1.emailsrvr.com is a backup mail server",
     options: [
       "A. 10.0.0.1 is the IP address of the primary mail server",
       "B. gcgapremium.com is unknown to DNS",
@@ -40,7 +40,7 @@ let questions = [
   {
     numb: 5,
     question:
-      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1) It will use RRSIG. (2)It will perform authenticated requests for A records (3)It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
+      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1)It will use RRSIG. (2)It will perform authenticated requests for A records. (3)It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
     answer: "D. DNSSEC",
     options: ["A. SSH", "B. SNMPv3", "C. S/MIME", "D. DNSSEC"],
   },
@@ -90,7 +90,7 @@ let questions = [
   {
     numb: 10,
     question:
-      "Which of the following devices would MOST likely have the following entries used to define its operation? (1) permit IP any any eq 80 (2) permit IP any any eq 4433 (3) deny IP any any",
+      "Which of the following devices would MOST likely have the following entries used to define its operation? (1)permit IP any any eq 80 (2)permit IP any any eq 4433 (3)deny IP any any",
     answer: "A. Firewall",
     options: [
       "A. Firewall",
@@ -152,14 +152,15 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your network currently has a dedicated firewall protecting access to aweb server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80 You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
-    answer: "C. Role-based access control",
+      "Your network currently has a dedicated firewall protecting access to aweb server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80 You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal?",
+    answer: [
+      "D. Add the following rule to the firewall: DENY IP ALL ALL 53 & Add an implicit deny rule at the end of the ACL",
+    ],
     options: [
       "A. Add the following rule to the firewall: DENY TCP ALL ALL 53",
       "B. Add the following rule to the firewall: DENY UDP ALL ALL 53",
-      "C. Add the following rule to the firewall: DENY TCP ALL ALL 25",
-      "D. Add the following rule to the firewall: DENY IP ALL ALL 53",
-      "E. Add an implicit deny rule at the end of the ACL",
+      "C. Add the following rule to the firewall: DENY TCP ALL ALL 25 & Add the following rule to the firewall: DENY TCP ALL ALL 53 ",
+      "D. Add the following rule to the firewall: DENY IP ALL ALL 53 & Add an implicit deny rule at the end of the ACL",
     ],
   },
 ];

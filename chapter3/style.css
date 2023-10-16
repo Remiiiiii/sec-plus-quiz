@@ -508,6 +508,22 @@ body {
   font-size: 16px; /* Set the font size of options */
 }
 
+.custom-swal-confirm-button {
+  width: 190px;
+  height: 55px;
+  background: #c40094;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #c40094;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 @media (min-aspect-ratio: 16/9) {
   #video-bg {
     width: 100%;

@@ -33,7 +33,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "Lisa created a document called password.txt and put the usernames of two accounts with elevated privileges. She then placed the file on her administrator account desktop on several servers. Which of the followin gBEST explains her actions?",
+      "Lisa created a document called password.txt and put the usernames of two accounts with elevated privileges. She then placed the file on her administrator account desktop on several servers. Which of the following BEST explains her actions?",
     answer: "C. The document is a honeyfile",
     options: [
       "A. She can use this file to retrieve the passwords if she forgets them",
@@ -52,7 +52,7 @@ let questions = [
   {
     numb: 6,
     question:
-      "6. Lisa is creating a detailed diagram of wireless access points and hotspots within your organization. What is another name for this?",
+      "Lisa is creating a detailed diagram of wireless access points and hotspots within your organization. What is another name for this?",
     answer: "B. Wireless footprinting",
     options: [
       "A. Remote access VPN",
@@ -64,7 +64,7 @@ let questions = [
   {
     numb: 7,
     question:
-      "7. You are assisting a small business owner in setting up a public wireless hotspot for her customers. She wants to allow customers to access the hotspot without entering a password. Which of the following is MOST appropriate for this hotspot?",
+      "You are assisting a small business owner in setting up a public wireless hotspot for her customers. She wants to allow customers to access the hotspot without entering a password. Which of the following is MOST appropriate for this hotspot?",
     answer: "A. Use Open mode",
     options: [
       "A. Use Open mode",
@@ -88,7 +88,7 @@ let questions = [
   {
     numb: 9,
     question:
-      "You are an administrator at a small organization. Homer contacted you today and reported the following: (1)He logged on normally on Monday morning and accessed network shares. (2)Later, when he tried to access the Internet, a pop-up window with the organization's wireless SSID prompted him to log on. (3)After doing so, he could access the Internet but no longer had access to the network shares. (4)Three days later, his bank notified him of suspicious activity on his account.Which of the following indicates the MOST likely explanation for this activity?",
+      "You are an administrator at a small organization. Homer contacted you today and reported the following: (1)He logged on normally on Monday morning and accessed network shares. (2)Later, when he tried to access the Internet, a pop-up window with the organization's wireless SSID prompted him to log on. (3)After doing so, he could access the Internet but no longer had access to the network shares. (4)Three days later, his bank notified him of suspicious activity on his account. Which of the following indicates the MOST likely explanation for this activity?",
     answer: "A. An evil twin",
     options: [
       "A. An evil twin",
