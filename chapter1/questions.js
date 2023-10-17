@@ -4,6 +4,8 @@ let questions = [
     question:
       "Management within your organization has defined a use case to support the confidentiality of data stored in a database. Which of the following solutions will BEST  meet this need?",
     answer: "C. Encryption",
+    explanation:
+      "Encryption is the best choice to provide confidentiality of any type of information, including data stored in a database. Hashing supports a use case of supporting integrity. Disk redundancies provide resilience and increase availability. Patching systems increases availability and reliability.",
     options: [
       "A. Hashing",
       "B. Disk redundancies",

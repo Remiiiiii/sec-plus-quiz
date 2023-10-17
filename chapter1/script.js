@@ -127,8 +127,18 @@ function optionSelected(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
+  let explanation = questions[questionCount].explanation;
 
   if (userAnswer == correctAnswer) {
+    Swal.fire({
+      text: explanation,
+      customClass: {
+        confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+      },
+      buttonsStyling: false, // Disable default button styling
+      showCancelButton: false, // Hide the Cancel button
+      confirmButtonColor: "", // Change the button color
+    });
     console.log("anwser is correct");
     answer.classList.add("correct");
     userScore += 1;

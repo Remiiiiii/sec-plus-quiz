@@ -123,7 +123,7 @@ let questions = [
   {
     numb: 11,
     question:
-      "Database administrators have created a database used by a web application. However, testing shows that application queries against the database take a significant amount of time. Which of the following actions are MOST likely to improve the overall performance of the database?",
+      "Database administrators have created a database used by a web application. However, testing shows that application queries against the database take a significant amount of time. Which of the following actions is MOST likely to improve the overall performance of the database?",
     answer: "A. Normalization",
     options: [
       "A. Normalization",
@@ -159,7 +159,7 @@ let questions = [
   {
     numb: 14,
     question:
-      "Your organization has created a web application that will go live after testing is complete. An application tester sees the following URL:https://gcgapremium.com/info.php?sessionID=10123&acct=homer. The tester resends the following URL to the website:https://gcgapremium.com/info.php?sessionID=32101&acct=homer. Which of the following attacks is the tester checking?",
+      "Your organization has created a web application that will go live after testing is complete. An application tester sees the following URL: https://gcgapremium.com/info.php?sessionID=10123&acct=homer. The tester resends the following URL to the website: https://gcgapremium.com/info.php?sessionID=32101&acct=homer. Which of the following attacks is the tester checking?",
     answer: "C. Cross-site request forgery",
     options: [
       "A. Pass the hash",
@@ -171,7 +171,7 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your SIEM sent an alert after detecting the following script was run ona system within your network. invoke-command {$a = net localgroup administrators | where {$_ -AND $_ -notmatch 'command completed'} | select -skip 4 } What BEST describes this script?",
+      "Your SIEM sent an alert after detecting the following script was run on a system within your network. invoke-command {$a = net localgroup administrators | where {$_ -AND $_ -notmatch 'command completed'} | select -skip 4 } What BEST describes this script?",
     answer: "C. A PowerShell script to list local administrators",
     options: [
       "A. A Python script to list local administrators",
