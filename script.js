@@ -27,4 +27,7 @@ chapterSelect.addEventListener("change", function () {
   if (selectedChapter === "chapter-6") {
     window.location.href = "./chapter6/index.html";
   }
+  if (selectedChapter === "chapter-7") {
+    window.location.href = "./chapter7/index.html";
+  }
 });
