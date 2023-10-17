@@ -510,7 +510,7 @@ body {
   width: 190px;
   height: 55px;
   background: #c40094;
-  border: 2px solid white;
+  border: none;
   outline: none;
   border-radius: 6px;
   box-shadow: 0 0 10px #c40094;
