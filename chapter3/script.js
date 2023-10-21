@@ -46,6 +46,7 @@ continueBtn.onclick = () => {
 };
 
 tryAgainBtn.onclick = () => {
+  startOver();
   tryAgainAudio.play();
   quizBox.classList.add("active");
   nextBtn.classList.remove("active");
@@ -62,6 +63,7 @@ tryAgainBtn.onclick = () => {
 };
 
 homeBtn.onclick = () => {
+  startOver();
   homeAudio.play();
   quizSection.classList.remove("active");
   nextBtn.classList.remove("active");
@@ -96,6 +98,14 @@ nextBtn.onclick = () => {
     showResultBox();
   }
 };
+
+function startOver() {
+  correctAnswerCount = 0; // Reset the correct answer count
+  selectedAnswers = []; // Reset the selected answers
+  questionCount = 0;
+  questionNumb = 1;
+  userScore = 0;
+}
 
 const optionList = document.querySelector(".option-list");
 
@@ -132,6 +142,7 @@ function optionSelected(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
+  let explanation = questions[questionCount].explanation;
 
   if (questionCount == 14) {
     // Check if the user has already selected the maximum number of answers
@@ -166,6 +177,15 @@ function optionSelected(answer) {
     nextBtn.classList.add("active");
   } else {
     if (userAnswer === correctAnswer) {
+      Swal.fire({
+        text: explanation,
+        customClass: {
+          confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+        },
+        buttonsStyling: false, // Disable default button styling
+        showCancelButton: false, // Hide the Cancel button
+        confirmButtonColor: "", // Change the button color
+      });
       console.log("Answer is correct");
       answer.classList.add("correct");
       userScore += 1;
