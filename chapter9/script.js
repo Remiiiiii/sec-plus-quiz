@@ -160,7 +160,8 @@ function optionSelected(answer) {
         title: "Oops...",
         text: "You've already selected the maximum number of answers",
         customClass: {
-          confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+          confirmButton: "custom-swal-confirm-button",
+          popup: "swal-wide",
         },
         buttonsStyling: false, // Disable default button styling
         showCancelButton: false, // Hide the Cancel button
@@ -193,6 +194,7 @@ function optionSelected(answer) {
           text: explanation,
           customClass: {
             confirmButton: "custom-swal-confirm-button",
+            popup: "swal-wide",
           },
           buttonsStyling: false,
           showCancelButton: false,
@@ -213,7 +215,8 @@ function optionSelected(answer) {
       Swal.fire({
         text: explanation,
         customClass: {
-          confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+          confirmButton: "custom-swal-confirm-button",
+          popup: "swal-wide",
         },
         buttonsStyling: false, // Disable default button styling
         showCancelButton: false, // Hide the Cancel button

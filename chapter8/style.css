@@ -264,6 +264,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
+  transform: scale(0.9);
   transition-delay: 0s;
   overflow-y: scroll;
 }
@@ -505,6 +506,14 @@ body {
   border-radius: 6px;
 }
 
+#q-img2 {
+  max-width: 100%;
+  height: auto;
+  margin-right: 50px;
+  border: 1px solid #c40094;
+  border-radius: 6px;
+}
+
 /* Style the <select> element */
 #chapter-select {
   width: 100%; /* Set the width of the dropdown */
@@ -541,71 +550,54 @@ body {
   transition: 0.5s;
 }
 
-/* Center custom swal confirm button on mobile */
-/* Center the Swal2 modal on the screen */
-@media (max-width: 767px) {
-  .swal2-popup {
-    width: 90%; /* Adjust the width as needed */
-    max-width: 355px; /* Define a maximum width if necessary */
-    top: -30%;
-    margin-top: auto;
-    transform: translate(-55%, -55%);
+/* iPhone */
+@media (max-width: 375px) {
+  .swal-wide {
+    width: 325px;
   }
-}
 
-@media (min-aspect-ratio: 16/9) {
-  #video-bg {
-    width: 100%;
-    height: auto;
+  .buttons {
+    margin-bottom: 50px;
   }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  #video-bg {
-    width: auto;
-    height: 100%;
+  .exit-btn {
+    margin-right: 5px;
   }
-}
 
-@media (max-width: 767px) {
-  #video-bg {
+  .continue-btn {
+    margin-left: 5px;
+  }
+
+  .home-content {
+    height: 100vh;
+    text-align: center;
+    overflow-y: scroll;
+  }
+  .logo {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
-  /* Header styles for mobile */
-  .header {
-    padding: 15px 5%;
-  }
-
-  .logo {
-    font-size: 26px;
-  }
-
   .navbar a {
-    font-size: 16px;
-    margin-left: 25px;
+    font-size: 14px;
+    margin-left: 20px;
   }
 
-  /* Home section styles for mobile */
   .home-content h1 {
-    font-size: 38px;
+    font-size: 48px;
+    text-align: center;
   }
 
   .home-content p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin: -15px 15px;
   }
 
   .home-btn,
   .start-btn {
-    width: 150px;
-    height: 45px;
+    width: 130px !important;
+    height: 45px !important;
+    margin-top: -10px !important;
     font-size: 16px;
   }
 
-  /* Popup info styles for mobile */
   .popup-info {
     width: 90%;
   }
@@ -615,21 +607,16 @@ body {
   }
 
   .info-btn {
-    width: 120px;
+    width: 110px;
     height: 40px;
     font-size: 14px;
   }
 
-  .quiz-header span {
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-
   .quiz-box {
-    width: 90% !important; /* Adjust the width as needed */
-    padding: 15px;
+    width: 95vw !important;
+    margin-top: -45px !important;
   }
 
-  /* Quiz section styles for mobile */
   .quiz-box h1 {
     font-size: 20px;
   }
@@ -640,9 +627,13 @@ body {
   }
 
   .option-list .option {
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
     margin: 10px 0;
+  }
+
+  .quiz-footer {
+    margin-bottom: 25px;
   }
 
   .quiz-footer .question-total {
@@ -650,28 +641,273 @@ body {
   }
 
   .next-btn {
-    width: 90px;
+    width: 80px;
     height: 40px;
     font-size: 14px;
   }
 
-  /* Result box styles for mobile */
   .result-box h2 {
     font-size: 40px;
   }
 
   .score-text {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 15px;
   }
 
   .buttons button {
-    width: 120px;
+    width: 110px;
     height: 45px;
     font-size: 14px;
   }
+}
 
-  /* Video background hide on small screens */
+/* iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar a {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 60px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .home-btn,
+  .start-btn {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .popup-info {
+    width: 80%;
+  }
+
+  .popup-info h2 {
+    font-size: 45px;
+  }
+
+  .info-btn {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .quiz-box h1 {
+    font-size: 24px;
+  }
+
+  .question-text {
+    font-size: 16px;
+    padding: 15px 0 10px;
+  }
+
+  .option-list .option {
+    font-size: 16px;
+    padding: 12px;
+    margin: 12px 0;
+  }
+
+  .quiz-footer .question-total {
+    font-size: 16px;
+  }
+
+  .next-btn {
+    width: 90px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .result-box h2 {
+    font-size: 45px;
+  }
+
+  .score-text {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1025px) {
+  .navbar a {
+    font-size: 18px;
+    margin-left: 35px;
+  }
+
+  .home-content h1 {
+    font-size: 78px;
+  }
+
+  .home-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .home-btn,
+  .start-btn {
+    width: 190px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .popup-info {
+    width: 500px;
+  }
+
+  .popup-info h2 {
+    font-size: 50px;
+  }
+
+  .info-btn {
+    width: 130px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .quiz-box h1 {
+    font-size: 26px;
+  }
+
+  .question-text {
+    font-size: 18px;
+    padding: 20px 0 15px;
+  }
+
+  .option-list .option {
+    font-size: 17px;
+    padding: 12px;
+    margin: 15px 0;
+  }
+
+  .quiz-footer .question-total {
+    font-size: 16px;
+  }
+
+  .next-btn {
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .result-box h2 {
+    font-size: 50px;
+  }
+
+  .score-text {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    width: 130px;
+    height: 47px;
+    font-size: 16px;
+  }
+}
+
+/* Android */
+@media only screen and (min-width: 360px) and (max-width: 1024px) {
+  .logo {
+    display: none;
+  }
+  .navbar a {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 60px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .home-btn,
+  .start-btn {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .popup-info {
+    width: 80%;
+  }
+
+  .popup-info h2 {
+    font-size: 45px;
+  }
+
+  .info-btn {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .quiz-box h1 {
+    font-size: 24px;
+  }
+
+  .question-text {
+    font-size: 16px;
+    padding: 15px 0 10px;
+  }
+
+  .option-list .option {
+    font-size: 16px;
+    padding: 12px;
+    margin: 12px 0;
+  }
+
+  .quiz-footer .question-total {
+    font-size: 16px;
+  }
+
+  .next-btn {
+    width: 90px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .result-box h2 {
+    font-size: 45px;
+  }
+
+  .score-text {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* Additional media queries for video background */
+@media (max-aspect-ratio: 16/9) {
+  #video-bg {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
   #video-bg {
     display: none;
   }
