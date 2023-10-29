@@ -34,7 +34,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:**nslookup -querytype=mx gcgapremium.com** You then see these results, on the left side of your screen. What does this tell you?",
+      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:**nslookup -querytype=mx gcgapremium.com** You then see the following results. What does this tell you?",
     answer: "C. The mx1.emailsrvr.com is a backup mail server",
     explanation:
       "This indicates that the mx1.emailsrvr.com is a backup mail server. The preference of mx1.emailsrvr.com is 90, which is higher than the preference of 20 for mx2.emailsrvr.com. In other words, mx2.emailsrvr.com is the primary email server and mx1.emailsrvr.com is the secondary email server. The “Address: 10.0.0.1” response indicates that the address of the Domain Name System (DNS) server that gave the response is 10.0.0.1. The “Server:  UnKnown” response indicates that the DNS server is not using PTR records, which resolve IP addresses to host names. Note that “UnKnown” looks like a typo but is the way that nslookup (short for nameserver lookup) displays it. The MX records are required so that other Internet-based mail servers can find the mail servers handling mail sent to a domain",

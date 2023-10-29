@@ -30,4 +30,16 @@ chapterSelect.addEventListener("change", function () {
   if (selectedChapter === "chapter-7") {
     window.location.href = "./chapter7/index.html";
   }
+  if (selectedChapter === "chapter-8") {
+    window.location.href = "./chapter8/index.html";
+  }
+  if (selectedChapter === "chapter-9") {
+    window.location.href = "./chapter9/index.html";
+  }
+  if (selectedChapter === "chapter-10") {
+    window.location.href = "./chapter10/index.html";
+  }
+  if (selectedChapter === "chapter-11") {
+    window.location.href = "./chapter11/index.html";
+  }
 });

@@ -14,6 +14,7 @@ const scoreAudio = document.getElementById("score-audio");
 const homeButton = document.querySelector(".home-btn");
 const homeAudio = document.getElementById("home-audio");
 const qImg = document.getElementById("q-img");
+const qImg2 = document.getElementById("q-img2");
 
 startBtn.onclick = () => {
   audio.play();
@@ -117,6 +118,12 @@ function showQuestions(index) {
     qImg.style.display = "block";
   } else {
     qImg.style.display = "none";
+  }
+
+  if (index === 3) {
+    qImg2.style.display = "block";
+  } else {
+    qImg2.style.display = "none";
   }
 
   quizBox.style.width = "50%";

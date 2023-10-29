@@ -45,6 +45,7 @@ continueBtn.onclick = () => {
 };
 
 tryAgainBtn.onclick = () => {
+  startOver();
   tryAgainAudio.play();
   quizBox.classList.add("active");
   nextBtn.classList.remove("active");
@@ -57,10 +58,10 @@ tryAgainBtn.onclick = () => {
   showQuestions(questionCount);
   questionCounter(questionNumb);
   headerScore();
-  tryAgainAudio.play();
 };
 
 homeBtn.onclick = () => {
+  startOver();
   homeAudio.play();
   quizSection.classList.remove("active");
   nextBtn.classList.remove("active");
@@ -96,12 +97,38 @@ nextBtn.onclick = () => {
   }
 };
 
+function startOver() {
+  correctAnswerCount = 0; // Reset the correct answer count
+  selectedAnswers = []; // Reset the selected answers
+  questionCount = 0;
+  questionNumb = 1;
+  userScore = 0;
+
+  // Reset the option elements and remove classes
+  const options = document.querySelectorAll(".option");
+  options.forEach((option) => {
+    option.classList.remove("correct");
+    option.classList.remove("incorrect");
+    option.classList.remove("disabled");
+  });
+
+  // Hide the result box and show the quiz box
+  resultBox.classList.remove("active");
+  quizBox.classList.add("active");
+
+  showQuestions(questionCount);
+  questionCounter(questionNumb);
+  headerScore();
+}
+
 const optionList = document.querySelector(".option-list");
 
 function showQuestions(index) {
   const questionText = document.querySelector(".question-text");
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
+
   quizBox.style.width = "50%";
+
   let optionTag = "";
 
   for (let i = 0; i < questions[index].options.length; i++) {
@@ -116,42 +143,92 @@ function showQuestions(index) {
   }
 }
 
+// Add a variable to keep track of selected answers for the current question
+let selectedAnswers = [];
+let correctAnswerCount = 0;
+
 function optionSelected(answer) {
   let userAnswer = answer.textContent;
   let correctAnswer = questions[questionCount].answer;
   let allOptions = optionList.children.length;
   let explanation = questions[questionCount].explanation;
 
-  if (userAnswer == correctAnswer) {
-    Swal.fire({
-      text: explanation,
-      customClass: {
-        confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
-      },
-      buttonsStyling: false, // Disable default button styling
-      showCancelButton: false, // Hide the Cancel button
-      confirmButtonColor: "", // Change the button color
-    });
-    console.log("anwser is correct");
-    answer.classList.add("correct");
-    userScore += 1;
-    headerScore();
-  } else {
-    console.log("answer is wrong");
-    answer.classList.add("incorrect");
+  if (questionCount === 8) {
+    // Check if the user has already selected the maximum number of answers
+    if (selectedAnswers.length >= questions[questionCount].numAnswersToSelect) {
+      Swal.fire({
+        title: "Oops...",
+        text: "You've already selected the maximum number of answers",
+        customClass: {
+          confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+        },
+        buttonsStyling: false, // Disable default button styling
+        showCancelButton: false, // Hide the Cancel button
+        confirmButtonColor: "", // Change the button color
+      });
+      return;
+    }
 
-    for (let i = 0; i < allOptions; i++) {
-      if (optionList.children[i].textContent == correctAnswer) {
-        optionList.children[i].setAttribute("class", "option correct");
+    // Check if the selected answer is one of the correct answers
+    if (questions[questionCount].answer.includes(userAnswer)) {
+      console.log("Answer is correct");
+      answer.classList.add("correct");
+      userScore += 0.5;
+      headerScore();
+
+      correctAnswerCount++;
+
+      if (correctAnswerCount === 2) {
+        Swal.fire({
+          text: explanation,
+          customClass: {
+            confirmButton: "custom-swal-confirm-button",
+          },
+          buttonsStyling: false,
+          showCancelButton: false,
+          confirmButtonColor: "",
+        });
+      }
+    } else {
+      console.log("Answer is wrong");
+      answer.classList.add("incorrect");
+    }
+
+    selectedAnswers.push(userAnswer);
+
+    nextBtn.classList.add("active");
+  } else {
+    if (userAnswer === correctAnswer) {
+      nextBtn.classList.add("active");
+      Swal.fire({
+        text: explanation,
+        customClass: {
+          confirmButton: "custom-swal-confirm-button", // Add custom class to the confirm button
+        },
+        buttonsStyling: false, // Disable default button styling
+        showCancelButton: false, // Hide the Cancel button
+        confirmButtonColor: "", // Change the button color
+      });
+      console.log("anwser is correct");
+      answer.classList.add("correct");
+      userScore += 1;
+      headerScore();
+    } else {
+      nextBtn.classList.add("active");
+      console.log("Answer is wrong");
+      answer.classList.add("incorrect");
+
+      for (let i = 0; i < allOptions; i++) {
+        if (optionList.children[i].textContent == correctAnswer) {
+          optionList.children[i].classList.add("correct");
+        }
       }
     }
-  }
 
-  for (let i = 0; i < allOptions; i++) {
-    optionList.children[i].classList.add("disabled");
+    for (let i = 0; i < allOptions; i++) {
+      optionList.children[i].classList.add("disabled");
+    }
   }
-
-  nextBtn.classList.add("active");
 }
 
 function questionCounter(index) {

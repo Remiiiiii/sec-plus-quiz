@@ -104,6 +104,7 @@ let questions = [
       "C. The segment between 192.168.7.1",
       "D. The router with the IP address of 192.168.7.1",
     ],
+    image: "../images/q9.png",
   },
   {
     numb: 10,

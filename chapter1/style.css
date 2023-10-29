@@ -63,6 +63,7 @@ body {
   position: absolute;
   z-index: -1;
 }
+
 .main.active {
   filter: blur(15px);
   pointer-events: none;
@@ -244,6 +245,11 @@ body {
 
 .quiz-section.active {
   left: 0;
+  top: 0; /* Set the top to 0 to start from the top of the viewport */
+  transform: translateY(0); /* No vertical transformation */
+  width: 100%;
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  /* Rest of your existing styles */
 }
 
 .quiz-section .quiz-box {
@@ -258,7 +264,9 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
+  transform: scale(0.9);
   transition-delay: 0s;
+  overflow-y: scroll;
 }
 
 .quiz-section .quiz-box.active {
@@ -267,6 +275,9 @@ body {
   transform: scale(1);
   transition: 1s ease;
   transition-delay: 1s;
+  margin: 0; /* Remove margin */
+  max-height: 90vh; /* Set a maximum height to fit within the viewport */
+  overflow-y: auto;
 }
 
 .quiz-box h1 {
@@ -296,10 +307,19 @@ body {
   padding: 4px;
 }
 
-.quiz-box .question-text {
+.question-text {
   font-size: 18px;
   font-weight: 300;
   padding: 20px 0 15px;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.question-image {
+  max-width: 40%; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-right: 50px;
+  border: 1px solid #c40094;
+  border-radius: 6px;
 }
 
 .option-list .option {
@@ -406,7 +426,6 @@ body {
 
 .result-box .percentage-container {
   width: 300px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -423,6 +442,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .percentage-container .circular-progress::before {
   content: "";
   position: absolute;
@@ -479,7 +499,7 @@ body {
 }
 
 #q-img {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
   margin-right: 50px;
   border: 1px solid #c40094;
@@ -522,6 +542,18 @@ body {
   transition: 0.5s;
 }
 
+/* Center custom swal confirm button on mobile */
+/* Center the Swal2 modal on the screen */
+@media (max-width: 767px) {
+  .swal2-popup {
+    width: 90%; /* Adjust the width as needed */
+    max-width: 355px; /* Define a maximum width if necessary */
+    top: -30%;
+    margin-top: auto;
+    transform: translate(-55%, -55%);
+  }
+}
+
 @media (min-aspect-ratio: 16/9) {
   #video-bg {
     width: 100%;
@@ -537,6 +569,110 @@ body {
 }
 
 @media (max-width: 767px) {
+  #video-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Header styles for mobile */
+  .header {
+    padding: 15px 5%;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  /* Home section styles for mobile */
+  .home-content h1 {
+    font-size: 38px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .home-btn,
+  .start-btn {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  /* Popup info styles for mobile */
+  .popup-info {
+    width: 90%;
+  }
+
+  .popup-info h2 {
+    font-size: 40px;
+  }
+
+  .info-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .quiz-header span {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  .quiz-box {
+    width: 90% !important; /* Adjust the width as needed */
+    padding: 15px;
+  }
+
+  /* Quiz section styles for mobile */
+  .quiz-box h1 {
+    font-size: 20px;
+  }
+
+  .question-text {
+    font-size: 16px;
+    padding: 15px 0 10px;
+  }
+
+  .option-list .option {
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .quiz-footer .question-total {
+    font-size: 14px;
+  }
+
+  .next-btn {
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* Result box styles for mobile */
+  .result-box h2 {
+    font-size: 40px;
+  }
+
+  .score-text {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .buttons button {
+    width: 120px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  /* Video background hide on small screens */
   #video-bg {
     display: none;
   }
