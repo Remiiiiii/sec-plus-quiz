@@ -59,7 +59,7 @@ let questions = [
       "The Marvin Monroe Memorial Hospital was recently sued after removing a kidney from the wrong patient. Hospital executives want to implement a method that will reduce medical errors related to misidentifying patients. They want to ensure medical personnel can identify a patient even if the patient is unconscious. Which of the following would be the BEST solution?",
     answer: "B. Vein scans",
     explanation:
-      "A vein scan implemented with a palm scanner would be the best solution of the available choices. The patient would place their palm onthe scanner for biometric identification, or if the patient is unconscious, medical personnel can place the patient's palm on the scanner. None of the other biometric methods can be easily performed on an unconscious patient. Gait analysis attempts to identify someone based on the way they walk. A retina scan scans the retina of an eye, but this will be difficult if someone is unconscious. Voice recognition identifies a person using speech recognition.",
+      "A vein scan implemented with a palm scanner would be the best solution for the available choices. The patient would place their palm on the scanner for biometric identification, or if the patient is unconscious, medical personnel can place the patient's palm on the scanner. None of the other biometric methods can be easily performed on an unconscious patient. Gait analysis attempts to identify someone based on the way they walk. A retina scan scans the retina of an eye, but this will be difficult if someone is unconscious. Voice recognition identifies a person using speech recognition.",
     options: [
       "A. Gait analysis",
       "B. Vein scans",
@@ -87,7 +87,7 @@ let questions = [
       "Your organization hires students during the summer for temporary help. They need access to network resources, but only during working hours. Management has stressed that it is critically important to safeguard trade secrets and other confidential information. Which of the following account management concepts would be MOST important to meet these goals?",
     answer: "C. Time-of-day restrictions",
     explanation:
-      "Time-of-day restrictions should be implemented to ensurethat temporary workers can only access network resources during work hours. The other answers represent good practices, but don't address theneed stated in the question that “personnel need access to network resources, but only during working hours.” Account expiration should be implemented if the organization knows the last workday of these workers.Account lockout will lock out an account if the wrong password is entered too many times. Password recovery allows users to recover a forgotten password or change their password if they forgot their password. Password history remembers previously used passwords and helps prevent users from using the same password.",
+      "Time-of-day restrictions should be implemented to ensure that temporary workers can only access network resources during work hours. The other answers represent good practices, but don't address the need stated in the question that “personnel need access to network resources, but only during working hours.” Account expiration should be implemented if the organization knows the last workday of these workers. Account lockout will lock out an account if the wrong password is entered too many times. Password recovery allows users to recover a forgotten password or change their password if they forgot their password. Password history remembers previously used passwords and helps prevent users from using the same password.",
     options: [
       "A. Account expiration",
       "B. Account lockout",
@@ -102,7 +102,7 @@ let questions = [
       "You need to provide a junior administrator with appropriate credentials to rebuild a domain controller after it suffers a catastrophic failure. Of the following choices, what type of account would BEST meet this need?",
     answer: "A. User account",
     explanation:
-      "A user account is the best choice of the available answers.More specifically, it would be a user account with administrative privileges (also known as a privileged account) so that the administrator can add the domain controller. A generic account (also known as a shared account) is shared between two or more users and is not recommended. A guest account is disabled by default and it is not appropriate to grant the guest account administrative privileges. A service account is an account created to be used by a service or application, not a person.",
+      "A user account is the best choice of the available answers. More specifically, it would be a user account with administrative privileges (also known as a privileged account) so that the administrator can add the domain controller. A generic account (also known as a shared account) is shared between two or more users and is not recommended. A guest account is disabled by default and it is not appropriate to grant the guest account administrative privileges. A service account is an account created to be used by a service or application, not a person.",
     options: [
       "A. User account",
       "B. Generic account",
@@ -130,7 +130,7 @@ let questions = [
       "A recent security audit discovered several apparently dormant user accounts. Although users could log on to the accounts, no one had logged on to them for more than 60 days. You later discovered that these accounts are for contractors who work approximately one week every quarter. Which of the following is the BEST response to this situation?",
     answer: "D. Disable the accounts",
     explanation:
-      "The best response is to disable the accounts and then enable them when needed by the contractors. Ideally, the accounts would include an expiration date so that they would automatically expire when no longer needed, but the scenario doesn't indicate the accounts have anexpiration date. Because the contractors need to access the accounts periodically, it's better to disable them rather than delete them. Reset the accounts implies you are changing the password, but this isn't needed.",
+      "The best response is to disable the accounts and then enable them when needed by the contractors. Ideally, the accounts would include an expiration date so that they would automatically expire when no longer needed, but the scenario doesn't indicate the accounts have an expiration date. Because the contractors need to access the accounts periodically, it's better to disable them rather than delete them. Resetting the accounts implies you are changing the password, but this isn't needed.",
     options: [
       "A. Remove the account expiration from the accounts",
       "B. Delete the accounts",
@@ -144,7 +144,7 @@ let questions = [
       "An administrator is implementing a network from scratch for a medical office. The owners want to have strong authentication and authorization to protect the privacy of data on all internal systems. They also want regular employees to use only a single username and password for all network access. Which of the following is the BEST choice to meet these needs?",
     answer: "C. Kerberos",
     explanation:
-      "Kerberos is the best choice of the available answers. Users claim an identity with a username for identification and prove their identity with a password for authentication. Kerberos uses a ticket-granting ticket (TGT) server for authentication and incorporates the user credentials in tickets. Users only have to sign in once with Kerberos, providing single sign-on (SSO). OpenID is an open source standard used for authenticationon the Internet, not internal networks. Security Assertion Markup Language (SAML) is an XML-based standard that provides SSO for web-based applications. Remote Authentication Dial-In User Service (RADIUS) is an authentication service that provides central authentication for remote access clients.",
+      "Kerberos is the best choice of the available answers. Users claim an identity with a username for identification and prove their identity with a password for authentication. Kerberos uses a ticket-granting ticket (TGT) server for authentication and incorporates the user credentials in tickets. Users only have to sign in once with Kerberos, providing single sign-on (SSO). OpenID is an open-source standard used for authentication on the Internet, not internal networks. Security Assertion Markup Language (SAML) is an XML-based standard that provides SSO for web-based applications. Remote Authentication Dial-In User Service (RADIUS) is an authentication service that provides central authentication for remote access clients.",
     options: ["A. OpenID", "B. SAML", "C. Kerberos", "D. RADIUS"],
   },
   {
@@ -162,7 +162,7 @@ let questions = [
       "Artie has been working at Ziffcorp as an accountant. However, after a disagreement with his boss, he decides to leave the company and gives a two-week notice. He has a user account allowing him to access network resources. Which of the following is the MOST appropriate step to take?",
     answer: "D. Ensure his account is disabled during his exit interview",
     explanation:
-      "His account should be disabled (or deleted if that is the company policy) during the exit interview. It's appropriate to conduct an exit interview immediately before an employee departs. Employees often give a two-week or longer notice. If their access is revoked immediately, they won't be able to do any more work. While some companies do terminate employment when someone gives notice, from a security perspective, that doesn't address the needed action related to the user account. The purpose of a mandatory vacation is to detect fraud, but if theemployee is leaving, any potential fraud will be detected when that employee leaves.",
+      "His account should be disabled (or deleted if that is the company policy) during the exit interview. It's appropriate to conduct an exit interview immediately before an employee departs. Employees often give a two-week or longer notice. If their access is revoked immediately, they won't be able to do any more work. While some companies do terminate employment when someone gives notice, from a security perspective, that doesn't address the needed action related to the user account. The purpose of a mandatory vacation is to detect fraud, but if the employee is leaving, any potential fraud will be detected when that employee leaves.",
     options: [
       "A. Ensure his account is disabled when he announces that he will be leaving the company",
       "B. Immediately terminate his employment",
