@@ -75,6 +75,11 @@ body {
   width: 200%;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .home {
   position: relative;
   left: -50%;

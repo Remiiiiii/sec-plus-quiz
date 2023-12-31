@@ -5,7 +5,7 @@ let questions = [
       "An outside consultant performed an audit of the Municipal House of Pancakes network. She identified a legacy protocol being used to access browser-based interfaces on switches and routers within the network. She recommended replacing the legacy protocol with a secure protocol to access these network devices using the same interface. Which of the following protocols should be implemented?",
     answer: "B. The newest fully supported version of TLS",
     explanation:
-      "The newest version of Transport Layer Security (TLS)should be implemented to access the network devices. Because the scenario says the same interface is needed, the only possible choices are TLS or Secure Sockets Layer (SSL). However, SSL has been deprecated and should not be used. Lightweight Directory Access Protocol Secure (LDAPS) is used to communicate with directories such as Microsoft Active Directory. Simple Network Management Protocol version 3 (SNMPv3) adds security to SNMP and encrypts the credentials sent to and from the network devices, but it doesn't support access via a browser interface.",
+      "The newest version of Transport Layer Security (TLS) should be implemented to access the network devices. Because the scenario says the same interface is needed, the only possible choices are TLS or Secure Sockets Layer (SSL). However, SSL has been deprecated and should not be used. Lightweight Directory Access Protocol Secure (LDAPS) is used to communicate with directories such as Microsoft Active Directory. Simple Network Management Protocol version 3 (SNMPv3) adds security to SNMP and encrypts the credentials sent to and from the network devices, but it doesn't support access via a browser interface.",
     options: [
       "A. The newest fully supported version of SSL",
       "B. The newest fully supported version of TLS",
@@ -19,7 +19,7 @@ let questions = [
       "Your organization's security policy requires that confidential data transferred over the internal network must be encrypted. Which of the following protocols would BEST meet this requirement?",
     answer: "B. SSH",
     explanation:
-      "You can use Secure Shell (SSH) to encrypt confidential data when transmitting it over the network. Secure File Transfer Protocol(SFTP) uses SSH to encrypt File Transfer Protocol (FTP) traffic, but FTP is unencrypted. Simple Network Management Protocol version 3 (SNMPv3) is used to monitor and manage network devices, not transmit data over anetwork. Secure Real-Time Transport Protocol (SRTP) provides encryption, message authentication, and integrity for voice and video, but not all data.",
+      "You can use Secure Shell (SSH) to encrypt confidential data when transmitting it over the network. Secure File Transfer Protocol(SFTP) uses SSH to encrypt File Transfer Protocol (FTP) traffic, but FTP is unencrypted. Simple Network Management Protocol version 3 (SNMPv3) is used to monitor and manage network devices, not transmit data over a network. Secure Real-Time Transport Protocol (SRTP) provides encryption, message authentication, and integrity for voice and video, but not all data.",
     options: ["A. FTP", "B. SSH", "C. SNMPv3", "D. SRTP"],
   },
   {
@@ -34,10 +34,10 @@ let questions = [
   {
     numb: 4,
     question:
-      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:**nslookup -querytype=mx gcgapremium.com** You then see the following results. What does this tell you?",
+      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:nslookup -querytype=mx gcgapremium.com You then see the following results. What does this tell you?",
     answer: "C. The mx1.emailsrvr.com is a backup mail server",
     explanation:
-      "This indicates that the mx1.emailsrvr.com is a backup mail server. The preference of mx1.emailsrvr.com is 90, which is higher than the preference of 20 for mx2.emailsrvr.com. In other words, mx2.emailsrvr.com is the primary email server and mx1.emailsrvr.com is the secondary email server. The “Address: 10.0.0.1” response indicates that the address of the Domain Name System (DNS) server that gave the response is 10.0.0.1. The “Server:  UnKnown” response indicates that the DNS server is not using PTR records, which resolve IP addresses to host names. Note that “UnKnown” looks like a typo but is the way that nslookup (short for nameserver lookup) displays it. The MX records are required so that other Internet-based mail servers can find the mail servers handling mail sent to a domain",
+      "This indicates that the mx1.emailsrvr.com is a backup mail server. The preference of mx1.emailsrvr.com is 90, which is higher than the preference of 20 for mx2.emailsrvr.com. In other words, mx2.emailsrvr.com is the primary email server and mx1.emailsrvr.com is the secondary email server. The “Address: 10.0.0.1” response indicates that the address of the Domain Name System (DNS) server that gave the response is 10.0.0.1. The “Server: UnKnown” response indicates that the DNS server is not using PTR records, which resolve IP addresses to host names. Note that “UnKnown” looks like a typo but is the way that nslookup (short for nameserver lookup) displays it. The MX records are required so that other Internet-based mail servers can find the mail servers handling mail sent to a domain",
     options: [
       "A. 10.0.0.1 is the IP address of the primary mail server",
       "B. gcgapremium.com is unknown to DNS",
