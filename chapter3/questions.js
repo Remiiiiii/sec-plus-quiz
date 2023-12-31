@@ -155,7 +155,7 @@ let questions = [
       "You have added another router in your network. This router provides a path to a limited access network that isn't advertised. However, a network administrator needs to access this network regularly. Which of the following could he do to configure his computer to access this limited network?",
     answer: "C. Use the route command",
     explanation:
-      "The **route** command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QoS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
+      "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QoS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
     options: [
       "A. Implement QoS technologies",
       "B. Add a VLAN",
@@ -180,7 +180,7 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80 You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
+      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
     answer: [
       "D. Add the following rule to the firewall: DENY TCP ALL ALL 53",
       "E. Add an implicit deny rule at the end of the ACL",
@@ -191,7 +191,7 @@ let questions = [
       "A. Add the following rule to the firewall: DENY TCP ALL ALL 53",
       "B. Add the following rule to the firewall: DENY UDP ALL ALL 53",
       "C. Add the following rule to the firewall: DENY TCP ALL ALL 25",
-      "D. Add the following rule to the firewall: DENY TCP ALL ALL 53",
+      "D. Add the following rule to the firewall: DENY IP ALL ALL 53",
       "E. Add an implicit deny rule at the end of the ACL",
     ],
     numAnswersToSelect: 2,
