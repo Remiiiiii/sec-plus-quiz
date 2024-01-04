@@ -34,7 +34,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:nslookup -querytype=mx gcgapremium.com You then see the following results. What does this tell you?",
+      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command: nslookup -querytype=mx gcgapremium.com You then see the following results. What does this tell you?",
     answer: "C. The mx1.emailsrvr.com is a backup mail server",
     explanation:
       "This indicates that the mx1.emailsrvr.com is a backup mail server. The preference of mx1.emailsrvr.com is 90, which is higher than the preference of 20 for mx2.emailsrvr.com. In other words, mx2.emailsrvr.com is the primary email server and mx1.emailsrvr.com is the secondary email server. The “Address: 10.0.0.1” response indicates that the address of the Domain Name System (DNS) server that gave the response is 10.0.0.1. The “Server: UnKnown” response indicates that the DNS server is not using PTR records, which resolve IP addresses to host names. Note that “UnKnown” looks like a typo but is the way that nslookup (short for nameserver lookup) displays it. The MX records are required so that other Internet-based mail servers can find the mail servers handling mail sent to a domain",
@@ -48,7 +48,7 @@ let questions = [
   {
     numb: 5,
     question:
-      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1)It will use RRSIG. (2)It will perform authenticated requests for A records. (3)It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
+      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1) It will use RRSIG. (2) It will perform authenticated requests for A records. (3) It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
     answer: "D. DNSSEC",
     explanation:
       "This is a Domain Name System (DNS) server with the added capabilities of DNS Security Extensions (DNSSEC). DNSSEC is a suite of extensions to DNS. It uses a Resource Record Signature (RRSIG), commonly referred to as a digital signature, to provide data integrity and authentication for DNS replies. A DNS server resolves hostnames to IP addresses. Secure Shell (SSH) is commonly used to connect to remote systems and can be used to send files in an encrypted format over a network. Simple Network Management Protocol version 3 (SNMPv3) isused to manage and monitor network devices. Secure/Multipurpose Internet Mail Extensions(S/MIME) is a popular standard used to encrypt email, but email is not mentioned in the scenario.",
@@ -108,7 +108,7 @@ let questions = [
   {
     numb: 10,
     question:
-      "Which of the following devices would MOST likely have the following entries used to define its operation? (1)permit IP any any eq 80 (2)permit IP any any eq 4433 (3)deny IP any any",
+      "Which of the following devices would MOST likely have the following entries used to define its operation? (1) permit IP any any eq 80 (2) permit IP any any eq 4433 (3) deny IP any any",
     answer: "A. Firewall",
     explanation:
       "These are rules in an access control list (ACL) within a firewall. The first two rules indicate that traffic from any IP address, to any IP address, using ports 80 or 443 is permitted or allowed. The final rule is also known as an implicit deny rule and is placed last in the ACL. It ensures that all traffic that hasn't been previously allowed is denied. A proxy server would not use an ACL, although it would use ports 80 and 443 for Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS), respectively. A web server wouldn't use an ACL, although it would also use ports 80 and 443. A jump server is a server placed between different security zones (such as an internal network and a screened subnet) and isused to manage devices in the other security zone.",
@@ -180,7 +180,7 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
+      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1) PERMIT TCP ANY ANY 443 (2) PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
     answer: [
       "D. Add the following rule to the firewall: DENY TCP ALL ALL 53",
       "E. Add an implicit deny rule at the end of the ACL",
