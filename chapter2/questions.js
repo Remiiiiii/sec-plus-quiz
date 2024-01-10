@@ -2,7 +2,7 @@ let questions = [
   {
     numb: 1,
     question:
-      "Your organization wants to identify biometric methods used for identification.The requirements are: (1)Collect the data passively (2)Bypass a formal enrollment proces. (3)Avoid obvious methods that let the subject know data is being collected. Which of the following biometric methods BEST meet these requirements? (Select TWO)",
+      "Your organization wants to identify biometric methods used for identification.The requirements are: (1) Collect the data passively (2) Bypass a formal enrollment proces. (3) Avoid obvious methods that let the subject know data is being collected. Which of the following biometric methods BEST meet these requirements? (Select TWO)",
     answer: ["D. Facial", "F. Gait analysis"],
     explanation:
       "It's possible to collect facial scan data and perform gait analysis without an enrollment process. You would use cameras to observe subjects from a distance and collect data passively. You need a formal enrollment process for fingerprints, retinas, irises, and palm vein methods. Retina and iris scans need to be very close to the eye and are very obvious. Palm vein methods require users to place their palm on a scanner. While it's possible to collect fingerprints passively, you still need an enrollment process",
