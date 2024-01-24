@@ -182,7 +182,7 @@ let questions = [
     question:
       "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1) PERMIT TCP ANY ANY 443 (2) PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
     answer: [
-      "D. Add the following rule to the firewall: DENY TCP ALL ALL 53",
+      "D. Add the following rule to the firewall: DENY IP ALL ALL 53",
       "E. Add an implicit deny rule at the end of the ACL",
     ],
     explanation:
