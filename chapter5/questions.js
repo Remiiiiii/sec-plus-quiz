@@ -144,7 +144,7 @@ let questions = [
       "Your organization is planning to implement a BYOD policy. However, management wants to implement a comprehensive solution to protect the organization's data when the BYOD policy is put into place. Which of the following is the BEST choice to meet these needs?",
     answer: "C. MDM",
     explanation:
-      "A mobile device management (MDM) solution is the best choice because it can manage multiple risks related to mobile devices in abring your device (BYOD) scenario. Full disk encryption (FDE)typically isn't feasible in a BYOD scenario because it requires an organization to encrypt devices owned by employees. Some FDE drives use self-encrypting drive (SED) technology, and they aren't feasible for the same reason FDE drives aren't feasible. Mobile application management(MAM) only manages applications on mobile devices, and it isn't a comprehensive solution.",
+      "A mobile device management (MDM) solution is the best choice because it can manage multiple risks related to mobile devices in a bring your device (BYOD) scenario. Full disk encryption (FDE) typically isn't feasible in a BYOD scenario because it requires an organization to encrypt devices owned by employees. Some FDE drives use self-encrypting drive (SED) technology, and they aren't feasible for the same reason FDE drives aren't feasible. Mobile application management(MAM) only manages applications on mobile devices, and it isn't a comprehensive solution.",
     options: ["A. FDE", "B. SED", "C. MDM", "D. MAMY"],
   },
   {
