@@ -25,7 +25,7 @@ let questions = [
       "This is using one-factor authentication—something you know. The application uses the username for identification and the password for authentication. Note that even though the application is logging the location using Global Positioning System (GPS), there isn't any indication that it is using this information for authentication. Dual-factor authentication requires another factor of authentication such as something you are or something you have. Something you are authentication factor refers to biometric authentication methods. The something you have authentication factor refers to something you can hold, such as a smart card.",
     options: [
       "A. One-factor",
-      "B. Dual-facor",
+      "B. Dual-factor",
       "C. Something you are",
       "D. Something you have",
     ],

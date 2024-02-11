@@ -148,7 +148,7 @@ let questions = [
       "Maggie needs access to the project.doc file available on a Linux server. Lisa, a system administrator responsible for this server, sees the following permissions for the file: rwx rw- ---. What should Lisa use to grant Maggie read access to the file?",
     answer: "A. chmod",
     explanation:
-      "The system administrator should modify permissions with the chmod (short for change mode) command. The journalctl command queries the Linux system logging utility (journald) and displays log entries from several sources. The cat command (short for concatenate) displays file contents. LAMP is an acronym for Linux, Apache, MySQL, and PHP (orPerl or Python).",
+      "The system administrator should modify permissions with the chmod (short for change mode) command. The journalctl command queries the Linux system logging utility (journald) and displays log entries from several sources. The cat command (short for concatenate) displays file contents. LAMP is an acronym for Linux, Apache, MySQL, and PHP (or Perl or Python).",
     options: ["A. chmod", "B. journalctl", "C. cat", "D. LAMP"],
   },
   {

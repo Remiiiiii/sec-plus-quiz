@@ -108,10 +108,10 @@ let questions = [
   {
     numb: 10,
     question:
-      "Which of the following devices would MOST likely have the following entries used to define its operation? (1) permit IP any any eq 80 (2) permit IP any any eq 4433 (3) deny IP any any",
+      "Which of the following devices would MOST likely have the following entries used to define its operation? (1) permit IP any any eq 80 (2) permit IP any any eq 443 (3) deny IP any any",
     answer: "A. Firewall",
     explanation:
-      "These are rules in an access control list (ACL) within a firewall. The first two rules indicate that traffic from any IP address, to any IP address, using ports 80 or 443 is permitted or allowed. The final rule is also known as an implicit deny rule and is placed last in the ACL. It ensures that all traffic that hasn't been previously allowed is denied. A proxy server would not use an ACL, although it would use ports 80 and 443 for Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS), respectively. A web server wouldn't use an ACL, although it would also use ports 80 and 443. A jump server is a server placed between different security zones (such as an internal network and a screened subnet) and isused to manage devices in the other security zone.",
+      "These are rules in an access control list (ACL) within a firewall. The first two rules indicate that traffic from any IP address, to any IP address, using ports 80 or 443 is permitted or allowed. The final rule is also known as an implicit deny rule and is placed last in the ACL. It ensures that all traffic that hasn't been previously allowed is denied. A proxy server would not use an ACL, although it would use ports 80 and 443 for Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS), respectively. A web server wouldn't use an ACL, although it would also use ports 80 and 443. A jump server is a server placed between different security zones (such as an internal network and a screened subnet) and is used to manage devices in the other security zone.",
     options: [
       "A. Firewall",
       "B. Proxy server",
@@ -155,9 +155,9 @@ let questions = [
       "You have added another router in your network. This router provides a path to a limited access network that isn't advertised. However, a network administrator needs to access this network regularly. Which of the following could he do to configure his computer to access this limited network?",
     answer: "C. Use the route command",
     explanation:
-      "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QoS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
+      "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QOS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
     options: [
-      "A. Implement QoS technologies",
+      "A. Implement QOS technologies",
       "B. Add a VLAN",
       "C. Use the route command",
       "D. Open additional ports on the router",
