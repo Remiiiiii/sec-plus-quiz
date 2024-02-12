@@ -188,7 +188,7 @@ let questions = [
       "Your organization has created a web application that will go live after testing is complete. An application tester sees the following URL: https://gcgapremium.com/info.php?sessionID=10123&acct=homer. The tester resends the following URL to the website: https://gcgapremium.com/info.php?sessionID=32101&acct=homer. Which of the following attacks is the tester checking?",
     answer: "C. Cross-site request forgery",
     explanation:
-      "This indicates an attempt to launch a cross-site requestforgery attack. The question mark (?) in the URL is the giveaway here. Apass the hash attack is a password attack. A buffer overflow attack sends unexpected data, but the URLs are primarily the same, so it isn't unexpected data. A race condition occurs when a system attempts to do two or more operations simultaneously instead of in a specific order.",
+      "This indicates an attempt to launch a cross-site requestforgery attack. The question mark (?) in the URL is the giveaway here. A pass the hash attack is a password attack. A buffer overflow attack sends unexpected data, but the URLs are primarily the same, so it isn't unexpected data. A race condition occurs when a system attempts to do two or more operations simultaneously instead of in a specific order.",
     options: [
       "A. Pass the hash",
       "B. Buffer overflow",
