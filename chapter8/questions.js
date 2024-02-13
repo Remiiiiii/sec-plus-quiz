@@ -11,7 +11,7 @@ let questions = [
   {
     numb: 2,
     question:
-      "Maggie is performing a risk assessment on a database server. Whiledoing so, she created a document showing all the known risks to this server,along with the risk score for each risk. Which of the following BESTidentifies the name of this document?",
+      "Maggie is performing a risk assessment on a database server. While doing so, she created a document showing all the known risks to this server, along with the risk score for each risk. Which of the following BEST identifies the name of this document?",
     answer: "C. Risk register",
     explanation:
       "A risk register lists all known risks for an asset, such as a database server, and it typically includes a risk score (the combination of the likelihood of occurrence and the impact of the risk). Risk assessments(including qualitative and quantitative risk assessments) might use a risk register, but they are not risk registers. Residual risk refers to the remaining risk after applying security controls to mitigate a risk.",
@@ -25,7 +25,7 @@ let questions = [
   {
     numb: 3,
     question:
-      "Your organization hosts an e-commerce website used to sell digitalproducts. You are tasked with evaluating all the elements used to supportthis website. What are you performing?",
+      "Your organization hosts an e-commerce website used to sell digital products. You are tasked with evaluating all the elements used to support this website. What are you performing?",
     answer: "D. Supply chain assessment",
     explanation:
       "A supply chain assessment evaluates all the elements used to create, sell, and distribute a product. The National Institute of Standards and Technology (NIST) Risk Management Framework (RMF) (NIST SP 800-37 r2) provides steps for reducing supply chain risks. Risk assessments(including both quantitative and qualitative risk assessments) evaluate risks but don't evaluate the supply chain required to support an e-commerce website. Threat hunting is the process of actively looking for threats within a network before an automated tool detects and reports on the threat.",
