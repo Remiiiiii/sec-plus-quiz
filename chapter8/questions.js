@@ -39,7 +39,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "Which of the following elements are used as part of threat hunting?(Choose two.)",
+      "Which of the following elements are used as part of threat hunting? (Choose two)",
     answer: ["A. Intelligence fusion", "C. Advisories and bulletins"],
     explanation:
       "Intelligence fusion advisories and bulletins are part of threat hunting. Threat hunting is the process of actively looking for threats within a network before an automated tool detects and reports on the threat. Vulnerability scans are used as part of a security assessment. Although a history of vulnerability scans and related logs may be part of the intelligence fusion, CompTIA objectives specifically list the following four elements: intelligence fusion, advisories, and bulletins, threat feeds, and predictions of how attackers may maneuver through the network. A configuration review verifies that systems are configured correctly.",
@@ -127,7 +127,7 @@ let questions = [
       "Your organization has hired outside penetration testers to identify internal network vulnerabilities. After successfully exploiting vulnerabilities in a single computer, the testers attempt to access other systems within the network. Which of the following BEST describes their current actions?",
     answer: "C. Lateral movement",
     explanation:
-      "Lateral movement refers to actions taken to move through a network after successfully exploiting a single system. While not available as a possible answer, this could also be described as pivoting, which is the process of accessing other systems through a single compromised system. Partially known environment testing (sometimes called gray box testing)indicates the testers have some knowledge of a system or network before starting, but there is no indication in the scenario about their level of knowledge. Persistence refers to maintaining a presence on the system or network after the initial exploit. Privilege escalation refers to gaining higher privileges after an initial exploit.",
+      "Lateral movement refers to actions taken to move through a network after successfully exploiting a single system. While not available as a possible answer, this could also be described as pivoting, which is the process of accessing other systems through a single compromised system. Partially known environment testing (sometimes called gray box testing) indicates the testers have some knowledge of a system or network before starting, but there is no indication in the scenario about their level of knowledge. Persistence refers to maintaining a presence on the system or network after the initial exploit. Privilege escalation refers to gaining higher privileges after an initial exploit.",
     options: [
       "A. Partially known environment testing",
       "B. Persistence",
@@ -155,7 +155,7 @@ let questions = [
       "Your organization outsourced the development of a software module to modify an existing proprietary application's functionality. The developer completed the module and is now testing it with the entire application. What type of testing is the developer performing?",
     answer: "C. Partially known environment",
     explanation:
-      "The developer is performing a partially known environment test (sometimes called a gray box test). A partially known environmental tester has some knowledge of the application. In this scenario, the tester needs some knowledge of the application (such as input and output data) to develop and test the module. Known environment testers(sometimes called white box testers) have full knowledge about the product network they are testing, but because this is a proprietary application, it is unlikely the tester has full knowledge. Unknown environment testers(sometimes called black box testers) do not have any knowledge about the product or network they are testing, but this isn't feasible for a developer who needs to develop and test a module to modify an existing application. Red team refers to an exercise type and members of the red team are experts in attacking systems.",
+      "The developer is performing a partially known environment test (sometimes called a gray box test). A partially known environmental tester has some knowledge of the application. In this scenario, the tester needs some knowledge of the application (such as input and output data) to develop and test the module. Known environment testers (sometimes called white box testers) have full knowledge about the product network they are testing, but because this is a proprietary application, it is unlikely the tester has full knowledge. Unknown environment testers (sometimes called black box testers) do not have any knowledge about the product or network they are testing, but this isn't feasible for a developer who needs to develop and test a module to modify an existing application. Red team refers to an exercise type and members of the red team are experts in attacking systems.",
     options: [
       "A. Known environment",
       "B. Unknown environment",
@@ -189,10 +189,10 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your organization recently purchased and deployed an IDS within the network. Security administrators want to verify it will detect a syn stealthscan. Which of the following tools will BEST meet your needs?",
+      "Your organization recently purchased and deployed an IDS within the network. Security administrators want to verify it will detect a syn stealth scan. Which of the following tools will BEST meet your needs?",
     answer: "A. Tcpreplay",
     explanation:
-      "TCPreplay is a suite of utilities used to edit packet captures and resend them. It can be used to modify a packet capture to mimic known attacks such as a syn stealth scan. A syn stealth scan finds active hosts on the network by sending a SYN (synchronize) packet to an IP address to initiate a Transmission Control Protocol (TCP) session, waits for a SYN/ACK(synchronize/acknowledge) packet to verify the IP address is in use, and then sends an RST (reset) packet to cancel the TCP handshake. Thetcpdump command-line tool is a command-line packet analyzer (or protocol analyzer) and its primary purpose is to capture packets. Wireshark is a graphic-based packet analyzer used to capture packets, but it doesn't send packets. Netcat is useful for remotely accessing systems, but it doesn't capture or replay packets.",
+      "TCPreplay is a suite of utilities used to edit packet captures and resend them. It can be used to modify a packet capture to mimic known attacks such as a syn stealth scan. A syn stealth scan finds active hosts on the network by sending a SYN (synchronize) packet to an IP address to initiate a Transmission Control Protocol (TCP) session, waits for a SYN/ACK(synchronize/acknowledge) packet to verify the IP address is in use, and then sends an RST (reset) packet to cancel the TCP handshake. The tcpdump command-line tool is a command-line packet analyzer (or protocol analyzer) and its primary purpose is to capture packets. Wireshark is a graphic-based packet analyzer used to capture packets, but it doesn't send packets. Netcat is useful for remotely accessing systems, but it doesn't capture or replay packets.",
     options: ["A. Tcpreplay", "B. Tcpdump", "C. Wireshark", "D. Netcat"],
   },
 ];
