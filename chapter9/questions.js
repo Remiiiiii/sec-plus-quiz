@@ -31,10 +31,10 @@ let questions = [
   {
     numb: 3,
     question:
-      "Your organization needs to create a design for a high-security network fora U.S. government contract. The network should not be accessible by your organization's existing networks or the Internet. Which of the following options will BEST meet this need?",
+      "Your organization needs to create a design for a high-security network for a U.S. government contract. The network should not be accessible by your organization's existing networks or the Internet. Which of the following options will BEST meet this need?",
     answer: "B. Air gap",
     explanation:
-      "An air gap is a physical security control that ensures that the anetwork is physically isolated from other networks, including the Internet. A Faraday cage prevents radio frequency (RF) signals from entering or emanating beyond an enclosure, but a network within a Faraday cage can still be connected to external networks. Protected cable distribution practices isolate cables from electromagnetic interference (EMI) sources but don't isolate networks. Vaults are rooms or large compartments used to store valuables, not isolate networks.",
+      "An air gap is a physical security control that ensures that the a network is physically isolated from other networks, including the Internet. A Faraday cage prevents radio frequency (RF) signals from entering or emanating beyond an enclosure, but a network within a Faraday cage can still be connected to external networks. Protected cable distribution practices isolate cables from electromagnetic interference (EMI) sources but don't isolate networks. Vaults are rooms or large compartments used to store valuables, not isolate networks.",
     options: [
       "A. Faraday cage",
       "B. Air gap",
@@ -102,7 +102,7 @@ let questions = [
   {
     numb: 9,
     question:
-      "Your organization recently implemented two servers in an active/passiveload-balancing configuration. What security goal does this support?",
+      "Your organization recently implemented two servers in an active/passive load-balancing configuration. What security goal does this support?",
     answer: "D. Resilience",
     explanation:
       "An active/passive load-balancing configuration supports resilience and high availability. An active/passive load-balancing configuration uses redundant servers to ensure service continues to operate even if one of the servers fails. Obfuscation methods attempt to make something unclear or difficult to understand and are not related to load balancing. Integrity methods ensure that data has not been modified. Confidentiality methods such as encryption prevent the unauthorized disclosure of data.",
@@ -171,7 +171,7 @@ let questions = [
   {
     numb: 15,
     question:
-      "Lisa has scheduled quarterly meetings with department leaders to discuss how they would respond to various scenarios such as natural disasters or cyberattacks. During the meetings, she presents a scenario and asks attendees to indicate their responses. Also, during the meetings, she injects variations on the scenario similar to what may happen during a live event and encourages attendees to discuss their responses. What does this describe?",
+      "Lisa has scheduled quarterly meetings with department leaders to discuss how they would respond to various scenarios such as natural disasters or cyber attacks. During the meetings, she presents a scenario and asks attendees to indicate their responses. Also, during the meetings, she injects variations on the scenario similar to what may happen during a live event and encourages attendees to discuss their responses. What does this describe?",
     answer: "B. Tabletop exercise",
     explanation:
       "This is a tabletop exercise. A tabletop exercise is discussion-based, and participants discuss their responses to various scenarios. A simulation is a hands-on exercise, not a meeting. Incident response refers to the actual steps taken in response to an incident(preparation, identification, containment, eradication, recovery, lessons learned), not a meeting discussing steps to take. Site resiliency is tested by seeing if an alternate site (such as a hot site, cold site, or warm site) can take over if necessary, but the scenario doesn't discuss alternate sites.",
