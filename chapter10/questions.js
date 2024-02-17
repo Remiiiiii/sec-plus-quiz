@@ -86,7 +86,7 @@ let questions = [
   {
     numb: 7,
     question:
-      "You are configuring a web server that will be used by salespeople via the Internet. Data transferred to and from the server needs to be encrypted, so you are tasked with requesting a certificate for the server. Which of the following would you MOST likely use to request the certificate?",
+      "You are configuring a web server that will be used by sales people via the Internet. Data transferred to and from the server needs to be encrypted, so you are tasked with requesting a certificate for the server. Which of the following would you MOST likely use to request the certificate?",
     answer: "C. CSR",
     explanation:
       "You would request a certificate with a certificate signing request (CSR). It uses a specific format to request a certificate. You submit the CSR to a certificate authority (CA), but the request needs to be in the CSR format. A certificate revocation list (CRL) is a list of revoked certificates. The Online Certificate Status Protocol (OCSP) is an alternate method of validating certificates and indicates if a certificate is good, revoked, or unknown.",
@@ -107,7 +107,7 @@ let questions = [
       "Your organization hosts an internal website used only by employees. The web site uses a certificate issued by a private CA and the network downloads a CRL from the CA once a week. However, after a recent compromise, security administrators want to use a real-time alternative to the CRL. Which of the following will BEST meet this need?",
     answer: "D. OCSP",
     explanation:
-      "The Online Certificate Status Protocol (OCSP) provides real-time responses to validate certificates issued by a certificate authority(CA). A certificate revocation list (CRL) includes a list of revoked certificates, but if it is only downloaded once a week, it can quickly be out of date. None of the other answers validates certificates. In the context of certificates, a subject alternative name (SAN) certificate is used for multiple domains that have different names but are owned by the same organization. A certificate signing request (CSR) is used to request a certificate. Aregistration authority (RA) accepts CSRs for a CA.",
+      "The Online Certificate Status Protocol (OCSP) provides real-time responses to validate certificates issued by a certificate authority(CA). A certificate revocation list (CRL) includes a list of revoked certificates, but if it is only downloaded once a week, it can quickly be out of date. None of the other answers validates certificates. In the context of certificates, a subject alternative name (SAN) certificate is used for multiple domains that have different names but are owned by the same organization. A certificate signing request (CSR) is used to request a certificate. A registration authority (RA) accepts CSRs for a CA.",
     options: ["A. SAN", "B. CSR", "C. RA", "D. OCSP"],
   },
   {
@@ -127,7 +127,7 @@ let questions = [
   {
     numb: 11,
     question:
-      "Management has mandated the use of digital signatures by all personnelwithin your organization. Which of the following use cases does thissupport?",
+      "Management has mandated the use of digital signatures by all personnel within your organization. Which of the following use cases does this support?",
     answer: "D. Supporting non-repudiation",
     explanation:
       "Digital signatures will support a use case of supporting-repudiation. Digital signatures also provide integrity and authentication, but these weren't available answers. Digital signatures do not encrypt data, so they do not support a use case of supporting confidentiality. Redundancy and fault-tolerance solutions will increase availability. Steganography is one way of supporting obfuscation.",
@@ -158,7 +158,7 @@ let questions = [
       "Your organization recently updated the security policy and mandated that emails sent by all upper-level executives include a digital signature. Which security goal does this policy address?",
     answer: "D. Authentication",
     explanation:
-      "A digital signature is an encrypted hash of a message and it can be used to provide authentication, integrity, and non-repudiation. Authentication identifies the sender of the email. Encryption provides confidentiality and prevents unauthorized disclosure. Obfuscation methods attempt to make something harder to read, but a digital signature doesn't provide obfuscation. Hashing is a method used to provide integrity, but hashing by it isn't a security goal.",
+      "A digital signature is an encrypted hash of a message and it can be used to provide authentication, integrity, and non-repudiation. Authentication identifies the sender of the email. Encryption provides confidentiality and prevents unauthorized disclosure. Obfuscation methods attempt to make something harder to read, but a digital signature doesn't provide obfuscation. Hashing is a method used to provide integrity, but hashing by itself isn't a security goal.",
     options: [
       "A. Confidentiality",
       "B. Hashing",
@@ -186,7 +186,7 @@ let questions = [
       "Your organization recently lost access to some decryption keys, resulting in the loss of some encrypted data. The chief information officer(CIO) mandated the creation of a key escrow. Which of the following cryptographic keys are MOST likely to be stored in key escrow?",
     answer: "B. Private",
     explanation:
-      "Copies of private keys are typically stored in a key escrow so that data encrypted with a private key can be retrieved if the original private key is no longer accessible. Public keys are available to anyone so there is no need to store them in a key escrow. An ephemeral key has a short lifetime and is re-created for each session. A session key is only used for a single session so wouldn't be stored in a key escrow.",
+      "Copies of private keys are typically stored in a key escrow so that data encrypted with a private key can be retrieved if the original private key is no longer accessible. Public keys are available to anyone so there is no need to store them in a key escrow. An ephemeral key has a short lifetime and is re-created for each session. A session key is only used for a single session so it wouldn't be stored in a key escrow.",
     options: ["A. Public", "B. Private", "C. Ephemeral", "D. Session"],
   },
 ];
