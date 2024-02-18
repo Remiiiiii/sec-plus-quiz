@@ -75,7 +75,7 @@ let questions = [
       "A developer is creating an application that will encrypt and decrypt data on mobile devices. These devices don't have a lot of processing power. Which of the following cryptographic methods has the LEAST overhead and can provide encryption for these mobile devices?",
     answer: "A. Elliptic curve cryptography",
     explanation:
-      "Elliptic curve cryptography (ECC) has minimal overhead and is often used with mobile devices for encryption. Perfect forward secrecy refers to session keys and provides assurances that session keys will not be compromised even if a private key is later compromised. Salting adds random characters to a password before hashing it to thwart rainbowtable attacks. Digital signatures provide integrity, authentication, and non-repudiation, but not encryption.",
+      "Elliptic curve cryptography (ECC) has minimal overhead and is often used with mobile devices for encryption. Perfect forward secrecy refers to session keys and provides assurances that session keys will not be compromised even if a private key is later compromised. Salting adds random characters to a password before hashing it to thwart rainbow table attacks. Digital signatures provide integrity, authentication, and non-repudiation, but not encryption.",
     options: [
       "A. Elliptic curve cryptography",
       "B. Perfect forward secrecy",
@@ -116,7 +116,7 @@ let questions = [
       "An organization hosts several web servers in a web farm used for e-commerce. Due to recent attacks, management is concerned that attackers might try to redirect website traffic, allowing the attackers to impersonate their e-commerce site. Which of the following methods will address this issue?",
     answer: "C. Pinning",
     explanation:
-      "Public key pinning provides clients with a list of public key hashes that clients can use to detect website impersonation attempts. Stapling reduces Online Certificate Status Protocol (OCSP) traffic by appending a timestamped, digitally signed OCSP response to a certificate. Perfect forward secrecy ensures that the compromise of one session keydoes not compromise other session keys used in the past. Key stretching techniques add additional bits (salts) to passwords, making them harder to crack.",
+      "Public key pinning provides clients with a list of public key hashes that clients can use to detect website impersonation attempts. Stapling reduces Online Certificate Status Protocol (OCSP) traffic by appending a timestamped, digitally signed OCSP response to a certificate. Perfect forward secrecy ensures that the compromise of one session key does not compromise other session keys used in the past. Key stretching techniques add additional bits (salts) to passwords, making them harder to crack.",
     options: [
       "A. Stapling",
       "B. Perfect forward secrecy",
