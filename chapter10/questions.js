@@ -183,7 +183,7 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your organization recently lost access to some decryption keys, resulting in the loss of some encrypted data. The chief information officer(CIO) mandated the creation of a key escrow. Which of the following cryptographic keys are MOST likely to be stored in key escrow?",
+      "Your organization recently lost access to some decryption keys, resulting in the loss of some encrypted data. The chief information officer (CIO) mandated the creation of a key escrow. Which of the following cryptographic keys are MOST likely to be stored in key escrow?",
     answer: "B. Private",
     explanation:
       "Copies of private keys are typically stored in a key escrow so that data encrypted with a private key can be retrieved if the original private key is no longer accessible. Public keys are available to anyone so there is no need to store them in a key escrow. An ephemeral key has a short lifetime and is re-created for each session. A session key is only used for a single session so it wouldn't be stored in a key escrow.",
