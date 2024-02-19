@@ -81,7 +81,7 @@ let questions = [
   {
     numb: 7,
     question:
-      "After a recent cybersecurity incident resulting in a significant loss, yourorganization decided to create a security policy for incident response.Which of the following choices is the BEST choice to include in the policywhen an incident requires confiscation of a physical asset?",
+      "After a recent cybersecurity incident resulting in a significant loss, your organization decided to create a security policy for incident response. Which of the following choices is the BEST choice to include in the policy when an incident requires confiscation of a physical asset?",
     answer:
       "C. Keep a record of everyone who took possession of the physicalasset",
     explanation:
@@ -89,8 +89,8 @@ let questions = [
     options: [
       "A. Ensure hashes are taken first",
       "B. Maintain the order of volatility",
-      "C. Keep a record of everyone who took possession of the physicalasset",
-      "D. Require interviews of all witnesses present when the asset isconfiscated",
+      "C. Keep a record of everyone who took possession of the physical asset",
+      "D. Require interviews of all witnesses present when the asset is confiscated",
     ],
   },
   {
@@ -184,13 +184,13 @@ let questions = [
       "A. Ensuring data is backed up in accordance with the data policy",
       "B. Ensuring data is classified and labeled correctly",
       "C. Complying with laws related to privacy",
-      "D. Understanding common threats, such as malware and phishingattacks",
+      "D. Understanding common threats, such as malware and phishing attacks",
     ],
   },
   {
     numb: 15,
     question:
-      "Organizations that conduct business in the EU must have a positionwithin the organization that can act as an independent advocate for theproper care and use of customer information. Which of the following BESTidentifies this position?",
+      "Organizations that conduct business in the EU must have a position within the organization that can act as an independent advocate for the proper care and use of customer information. Which of the following BEST identifies this position?",
     answer: "D. Data protection officer",
     explanation:
       "The data protection officer (DPO) is a role identified in the General Data Protection Regulation (GDPR), and the GDPR specifies the person in this role needs to act as an independent advocate for customer information. Data owners are responsible for identifying the proper classification of data, ensuring it is labeled correctly, and ensuring security controls are implemented to protect the data. A data custodian (also called a data steward) is responsible for routine daily tasks such as backing up data. A data processor is any entity that uses and manipulates the data.",
