@@ -1,3 +1,4 @@
+// Fix Questions 15 doesn't show correct answer description
 const startBtn = document.querySelector(".start-btn");
 const popupInfo = document.querySelector(".popup-info");
 const exitBtn = document.querySelector(".exit-btn");
