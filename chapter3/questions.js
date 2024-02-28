@@ -34,7 +34,7 @@ let questions = [
   {
     numb: 4,
     question:
-      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command:nslookup -querytype=mx gcgapremium.com You then see the following results. What does this tell you?",
+      "You are trying to determine what information attackers can gain about your organization using network reconnaissance methods via the Internet. Using a public wireless hot spot, you issue the following command: nslookup -querytype=mx gcgapremium.com You then see the following results. What does this tell you?",
     answer: "C. The mx1.emailsrvr.com is a backup mail server",
     explanation:
       "This indicates that the mx1.emailsrvr.com is a backup mail server. The preference of mx1.emailsrvr.com is 90, which is higher than the preference of 20 for mx2.emailsrvr.com. In other words, mx2.emailsrvr.com is the primary email server and mx1.emailsrvr.com is the secondary email server. The “Address: 10.0.0.1” response indicates that the address of the Domain Name System (DNS) server that gave the response is 10.0.0.1. The “Server: UnKnown” response indicates that the DNS server is not using PTR records, which resolve IP addresses to host names. Note that “UnKnown” looks like a typo but is the way that nslookup (short for nameserver lookup) displays it. The MX records are required so that other Internet-based mail servers can find the mail servers handling mail sent to a domain",
@@ -48,7 +48,7 @@ let questions = [
   {
     numb: 5,
     question:
-      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1)It will use RRSIG. (2)It will perform authenticated requests for A records. (3)It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
+      "Administrators are configuring a server within your organization's screened subnet. This server will have the following capabilities when it is fully configured: (1) It will use RRSIG. (2) It will perform authenticated requests for A records. (3) It will perform authenticated requests for AAAA records. What BEST identifies the capabilities of this server?",
     answer: "D. DNSSEC",
     explanation:
       "This is a Domain Name System (DNS) server with the added capabilities of DNS Security Extensions (DNSSEC). DNSSEC is a suite of extensions to DNS. It uses a Resource Record Signature (RRSIG), commonly referred to as a digital signature, to provide data integrity and authentication for DNS replies. A DNS server resolves hostnames to IP addresses. Secure Shell (SSH) is commonly used to connect to remote systems and can be used to send files in an encrypted format over a network. Simple Network Management Protocol version 3 (SNMPv3) isused to manage and monitor network devices. Secure/Multipurpose Internet Mail Extensions(S/MIME) is a popular standard used to encrypt email, but email is not mentioned in the scenario.",
@@ -60,7 +60,7 @@ let questions = [
       "Maggie regularly connects to a remote server named gcga using Secure Shell (ssh) from her Linux system. However, she has trouble remembering the password, and she wants to avoid using it without sacrificing security. She creates a cryptographic key pair to use instead. Which of the following commands is the BEST choice to use after creating the key pair?",
     answer: "A. ssh-copy-id -i ~.ssh/id_rsa.pub maggie@gcga",
     explanation:
-      "After creating the key pair, she should use the ssh-copy-id command to copy the public key to the server. The first step uses the ssh-keygen -t rsa command. This creates an RSA-based key pair (a private keyand a public key). The public key's location and the name is ~.ssh/id_rsa.pub, and the private key's location and the name is ~/.ssh/id_rsa. The second step is to copy the public key to the remote server using the command ssh-copy-id -i ~ .ssh/id_rsa.pub maggie@gcga. The private key should always stay private, but the chmod 644 command makes it readable by everyone, so it shouldn't be used. The ssh command connects to the remote server using Secure Shell (ssh). However, it's not required to connect to the server before copying it. The ssh-copy-id command is a utility within the OpenSSH suite of tools.",
+      "After creating the key pair, she should use the ssh-copy-id command to copy the public key to the server. The first step uses the ssh-keygen -t rsa command. This creates an RSA-based key pair (a private key and a public key). The public key's location and the name is ~.ssh/id_rsa.pub, and the private key's location and the name is ~/.ssh/id_rsa. The second step is to copy the public key to the remote server using the command ssh-copy-id -i ~ .ssh/id_rsa.pub maggie@gcga. The private key should always stay private, but the chmod 644 command makes it readable by everyone, so it shouldn't be used. The ssh command connects to the remote server using Secure Shell (ssh). However, it's not required to connect to the server before copying it. The ssh-copy-id command is a utility within the OpenSSH suite of tools.",
     options: [
       "A. ssh-copy-id -i ~.ssh/id_rsa.pub maggie@gcga",
       "B. chmod 644 ~/.ssh/id_rsa",
@@ -74,7 +74,7 @@ let questions = [
       "You are tasked with enabling NTP on some servers within your organization's screened subnet. Which of the following use cases are you MOST likely supporting with this action?",
     answer: "B. Providing time synchronization",
     explanation:
-      "The Network Time Protocol (NTP) provides time synchronization services, so enabling NTP on servers in the screened subnet (sometimes called a demilitarized zone or DMZ) would meet this use case. The Secure Real-time Transport Protocol (SRTP) provides encryption, message authentication, and integrity for audio and video over IP networks. Protocols such as Simple Mail Transfer Protocol (SMTP), Post OfficeProtocol v3 (POP3), and Internet Message Access Protocol version 4 (IMAP4) are used for email. Encrypting data isn't relevant to time synchronization services provided by NTP.",
+      "The Network Time Protocol (NTP) provides time synchronization services, so enabling NTP on servers in the screened subnet (sometimes called a demilitarized zone or DMZ) would meet this use case. The Secure Real-time Transport Protocol (SRTP) provides encryption, message authentication, and integrity for audio and video over IP networks. Protocols such as Simple Mail Transfer Protocol (SMTP), Post Office Protocol v3 (POP3), and Internet Message Access Protocol version 4 (IMAP4) are used for email. Encrypting data isn't relevant to time synchronization services provided by NTP.",
     options: [
       "A. Encrypting voice and video transmissions",
       "B. Providing time synchronization",
@@ -88,7 +88,7 @@ let questions = [
       "Your organization has several switches in use throughout the internal network. Management wants to implement a security control to prevent unauthorized access to these switches within the network. Which of the following choices would BEST meet this need?",
     answer: "A. Disable unused ports",
     explanation:
-      "You can prevent unauthorized access by disabling unused physical ports on the switches as an overall port security practice. This prevents the connection if someone plugs their computer into an unused disabled port. Spanning Tree Protocol (STP) prevents switching loop problems and should be enabled. Secure Shell (SSH) encrypts traffic and can be used to connect to network devices for management, but it doesn't directly protect a switch. Dynamic Host Configuration Protocol (DHCP) isused to dynamically issue IP addresses and is unrelated to this scenario.",
+      "You can prevent unauthorized access by disabling unused physical ports on the switches as an overall port security practice. This prevents the connection if someone plugs their computer into an unused disabled port. Spanning Tree Protocol (STP) prevents switching loop problems and should be enabled. Secure Shell (SSH) encrypts traffic and can be used to connect to network devices for management, but it doesn't directly protect a switch. Dynamic Host Configuration Protocol (DHCP) is used to dynamically issue IP addresses and is unrelated to this scenario.",
     options: [
       "A. Disable unused ports",
       "B. Disable STP",
@@ -108,10 +108,10 @@ let questions = [
   {
     numb: 10,
     question:
-      "Which of the following devices would MOST likely have the following entries used to define its operation? (1)permit IP any any eq 80 (2)permit IP any any eq 4433 (3)deny IP any any",
+      "Which of the following devices would MOST likely have the following entries used to define its operation? (1) permit IP any any eq 80 (2) permit IP any any eq 443 (3) deny IP any any",
     answer: "A. Firewall",
     explanation:
-      "These are rules in an access control list (ACL) within a firewall. The first two rules indicate that traffic from any IP address, to any IP address, using ports 80 or 443 is permitted or allowed. The final rule is also known as an implicit deny rule and is placed last in the ACL. It ensures that all traffic that hasn't been previously allowed is denied. A proxy server would not use an ACL, although it would use ports 80 and 443 for Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS), respectively. A web server wouldn't use an ACL, although it would also use ports 80 and 443. A jump server is a server placed between different security zones (such as an internal network and a screened subnet) and isused to manage devices in the other security zone.",
+      "These are rules in an access control list (ACL) within a firewall. The first two rules indicate that traffic from any IP address, to any IP address, using ports 80 or 443 is permitted or allowed. The final rule is also known as an implicit deny rule and is placed last in the ACL. It ensures that all traffic that hasn't been previously allowed is denied. A proxy server would not use an ACL, although it would use ports 80 and 443 for Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS), respectively. A web server wouldn't use an ACL, although it would also use ports 80 and 443. A jump server is a server placed between different security zones (such as an internal network and a screened subnet) and is used to manage devices in the other security zone.",
     options: [
       "A. Firewall",
       "B. Proxy server",
@@ -155,9 +155,9 @@ let questions = [
       "You have added another router in your network. This router provides a path to a limited access network that isn't advertised. However, a network administrator needs to access this network regularly. Which of the following could he do to configure his computer to access this limited network?",
     answer: "C. Use the route command",
     explanation:
-      "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QoS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
+      "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network. None of the other choices can add routing paths. Quality of Service (QOS) technologies allow administrators to give priority of some network traffic over other network traffic. A virtual local area network (VLAN) is used to segment or isolate a network, so configuring one won't grant access to a network. A router doesn't have ports that can be opened for individual users.",
     options: [
-      "A. Implement QoS technologies",
+      "A. Implement QOS technologies",
       "B. Add a VLAN",
       "C. Use the route command",
       "D. Open additional ports on the router",
@@ -180,9 +180,9 @@ let questions = [
   {
     numb: 15,
     question:
-      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1)PERMIT TCP ANY ANY 443 (2)PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
+      "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: (1) PERMIT TCP ANY ANY 443 (2) PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the firewall and you need to block them. Which of the following would meet this goal? (Select TWO. Each answer is a full solution.)",
     answer: [
-      "D. Add the following rule to the firewall: DENY TCP ALL ALL 53",
+      "D. Add the following rule to the firewall: DENY IP ALL ALL 53",
       "E. Add an implicit deny rule at the end of the ACL",
     ],
     explanation:

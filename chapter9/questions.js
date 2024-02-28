@@ -5,7 +5,7 @@ let questions = [
       "Employees access the data center by entering a cipher code at the door. However, everyone uses the same code, so it does not identify individuals. After a recent security incident, management has decided to implement a key card system that will identify individuals who enter and exit this secure area. However, the installation might take six months or longer. Which of the following choices can the organization install immediately to identify individuals who enter or exit the secure area? ",
     answer: "C. CCTV",
     explanation:
-      "Closed-circuit television (CCTV) or a similar videosurveillance system can monitor the entrance and record who enters andexits the area. An access control vestibule (sometimes called a mantrap)prevents tailgating, but it doesn't necessarily identify individuals. An accesslist is useful if a guard identifies users and allows access based on theaccess list, but the access list does not identify users. Bollards are a type ofbarricade that protects building entrances. Using a CCTV until the key cardsystem is installed is an example of a compensating control, but allcompensating controls do not identify people.",
+      "Closed-circuit television (CCTV) or a similar video surveillance system can monitor the entrance and record who enters and exits the area. An access control vestibule (sometimes called a mantrap) prevents tailgating, but it doesn't necessarily identify individuals. An access list is useful if a guard identifies users and allows access based on the access list, but the access list does not identify users. Bollards are a type of barricade that protects building entrances. Using a CCTV until the key card system is installed is an example of a compensating control, but all compensating controls do not identify people.",
     options: [
       "A. Access control vestibule",
       "B. Access lists",
@@ -31,10 +31,10 @@ let questions = [
   {
     numb: 3,
     question:
-      "Your organization needs to create a design for a high-security network fora U.S. government contract. The network should not be accessible by your organization's existing networks or the Internet. Which of the following options will BEST meet this need?",
+      "Your organization needs to create a design for a high-security network for a U.S. government contract. The network should not be accessible by your organization's existing networks or the Internet. Which of the following options will BEST meet this need?",
     answer: "B. Air gap",
     explanation:
-      "An air gap is a physical security control that ensures that the anetwork is physically isolated from other networks, including the Internet. A Faraday cage prevents radio frequency (RF) signals from entering or emanating beyond an enclosure, but a network within a Faraday cage can still be connected to external networks. Protected cable distribution practices isolate cables from electromagnetic interference (EMI) sources but don't isolate networks. Vaults are rooms or large compartments used to store valuables, not isolate networks.",
+      "An air gap is a physical security control that ensures that the a network is physically isolated from other networks, including the Internet. A Faraday cage prevents radio frequency (RF) signals from entering or emanating beyond an enclosure, but a network within a Faraday cage can still be connected to external networks. Protected cable distribution practices isolate cables from electromagnetic interference (EMI) sources but don't isolate networks. Vaults are rooms or large compartments used to store valuables, not isolate networks.",
     options: [
       "A. Faraday cage",
       "B. Air gap",
@@ -73,7 +73,7 @@ let questions = [
       "Your organization hosts several databases on two servers. Management wants to increase the redundancy of data storage for these servers. Which of the following is the BEST choice to meet this requirement? ",
     answer: "D. Multipath",
     explanation:
-      "Multipath is a fault-tolerance technique that provides more than one path for a system to the data storage system. It could be two SmallComputer System Interface (SCSI) controllers providing a path to SCSI disks, or two storage area network (SAN) switches providing redundant paths to a SAN. Network interface card (NIC) teaming combines the bandwidth of two or more NICs to increase the throughput, but the NICs won't necessarily be used to access disks. Managed power distribution units(PDUs) provide the ability to monitor energy consumption in a data center remotely. An uninterruptible power supply (UPS) provides short-term power to systems after a power failure.",
+      "Multipath is a fault-tolerance technique that provides more than one path for a system to the data storage system. It could be two Small Computer System Interface (SCSI) controllers providing a path to SCSI disks, or two storage area network (SAN) switches providing redundant paths to a SAN. Network interface card (NIC) teaming combines the bandwidth of two or more NICs to increase the throughput, but the NICs won't necessarily be used to access disks. Managed power distribution units (PDUs) provide the ability to monitor energy consumption in a data center remotely. An uninterruptible power supply (UPS) provides short-term power to systems after a power failure.",
     options: ["A. NIC teaming", "B. Managed PDUs", "C. UPS", "D. Multipath"],
   },
   {
@@ -102,7 +102,7 @@ let questions = [
   {
     numb: 9,
     question:
-      "Your organization recently implemented two servers in an active/passiveload-balancing configuration. What security goal does this support?",
+      "Your organization recently implemented two servers in an active/passive load-balancing configuration. What security goal does this support?",
     answer: "D. Resilience",
     explanation:
       "An active/passive load-balancing configuration supports resilience and high availability. An active/passive load-balancing configuration uses redundant servers to ensure service continues to operate even if one of the servers fails. Obfuscation methods attempt to make something unclear or difficult to understand and are not related to load balancing. Integrity methods ensure that data has not been modified. Confidentiality methods such as encryption prevent the unauthorized disclosure of data.",
@@ -165,13 +165,13 @@ let questions = [
       "A project manager is reviewing a business impact analysis. It indicates that a key website can tolerate a maximum of three hours of downtime. Administrators have identified several systems that require redundancy additions to meet this maximum downtime requirement. Of the following choices, what term refers to the maximum of three hours of downtime?",
     answer: "D. RTO",
     explanation:
-      "The recovery time objective (RTO) identifies the maximum amount of time it can take to restore a system after an outage. Because the business impact analysis states that the website can only tolerate three hours of downtime, this also identifies the RTO. The recovery point objective(RPO) identifies a point in time where data loss is acceptable, but it doesn't refer to downtime. The mean time to recover (MTTR) metric identifies the average (the arithmetic mean) time it takes to restore a failed system, but not the maximum amount of time a system can be down. The mean time between failures (MTBF) metric provides a measure of reliability and is usually represented in hours. A disaster recovery plan(DRP) details the recovery steps to take after different types of disasters.",
+      "The recovery time objective (RTO) identifies the maximum amount of time it can take to restore a system after an outage. Because the business impact analysis states that the website can only tolerate three hours of downtime, this also identifies the RTO. The recovery point objective (RPO) identifies a point in time where data loss is acceptable, but it doesn't refer to downtime. The mean time to recover (MTTR) metric identifies the average (the arithmetic mean) time it takes to restore a failed system, but not the maximum amount of time a system can be down. The mean time between failures (MTBF) metric provides a measure of reliability and is usually represented in hours. A disaster recover (DRP) details the recovery steps to take after different types of disasters.",
     options: ["A. RPO", "B. MTTR", "C. MTBF", "D. RTO", "E. DRP"],
   },
   {
     numb: 15,
     question:
-      "Lisa has scheduled quarterly meetings with department leaders to discuss how they would respond to various scenarios such as natural disasters or cyberattacks. During the meetings, she presents a scenario and asks attendees to indicate their responses. Also, during the meetings, she injects variations on the scenario similar to what may happen during a live event and encourages attendees to discuss their responses. What does this describe?",
+      "Lisa has scheduled quarterly meetings with department leaders to discuss how they would respond to various scenarios such as natural disasters or cyber attacks. During the meetings, she presents a scenario and asks attendees to indicate their responses. Also, during the meetings, she injects variations on the scenario similar to what may happen during a live event and encourages attendees to discuss their responses. What does this describe?",
     answer: "B. Tabletop exercise",
     explanation:
       "This is a tabletop exercise. A tabletop exercise is discussion-based, and participants discuss their responses to various scenarios. A simulation is a hands-on exercise, not a meeting. Incident response refers to the actual steps taken in response to an incident(preparation, identification, containment, eradication, recovery, lessons learned), not a meeting discussing steps to take. Site resiliency is tested by seeing if an alternate site (such as a hot site, cold site, or warm site) can take over if necessary, but the scenario doesn't discuss alternate sites.",

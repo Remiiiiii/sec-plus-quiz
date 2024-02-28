@@ -42,7 +42,7 @@ let questions = [
       "Your organization hosts an e-commerce web server selling digital products. The server randomly experiences a high volume of sales and usage, which causes spikes in resource usage. These spikes occasionally take the server down. Which of the following should be implemented to prevent these outages?",
     answer: "A. Elasticity",
     explanation:
-      "Elasticity is the best choice because it allows the server to dynamically scale up or out as needed in response to high resource usage.Scalability isn't the best answer because it is done manually, however, the high resource usage is random and manually adding resources can't respond to the random spikes quick enough. Normalization refers to organizing tables and columns in a database to reduce redundant data and improve overall database performance. Stored procedures are a group of SQL statements that execute as a whole and help prevent SQL injection attacks.",
+      "Elasticity is the best choice because it allows the server to dynamically scale up or out as needed in response to high resource usage. Scalability isn't the best answer because it is done manually, however, the high resource usage is random and manually adding resources can't respond to the random spikes quick enough. Normalization refers to organizing tables and columns in a database to reduce redundant data and improve overall database performance. Stored procedures are a group of SQL statements that execute as a whole and help prevent SQL injection attacks.",
     options: [
       "A. Elasticity",
       "B. Scalibility",
@@ -88,7 +88,7 @@ let questions = [
       "You suspect that traffic in your network is being rerouted to an unauthorized router within your network. Which of the following command-line tools would help you narrow down the problem?",
     answer: "B. tracert",
     explanation:
-      "You can use tracert to track packet flow through a network,and if an extra router has been added to your network, tracert will identify it. You can use ping to check connectivity with a remote system, but it doesn't show the route. The ipconfig command shows the network settings on a Windows computer, but it doesn't identify failed routers. Netstat shows active connections and other network statistics on a local system, but it doesn't identify network paths.",
+      "You can use tracert to track packet flow through a network, and if an extra router has been added to your network, tracert will identify it. You can use ping to check connectivity with a remote system, but it doesn't show the route. The ipconfig command shows the network settings on a Windows computer, but it doesn't identify failed routers. Netstat shows active connections and other network statistics on a local system, but it doesn't identify network paths.",
     options: ["A. ping", "B. tracert", "C. ipconfig", "D. netstat"],
   },
   {
@@ -97,7 +97,7 @@ let questions = [
       "Homer is complaining that he frequently has trouble accessing files on a server in the network. You determine the server's IP address is 172.16.17.11, but ping doesn't show any problem. You decide to use pathping and see the following result. Which of the following is the MOST likely problem?",
     answer: "C. The segment between 192.168.7.1",
     explanation:
-      "The segment between 192.168.7.1 and 192.168.5.1 is mostlikely the problem. The results show packet loss of 14 percent on this segment. The router at 10.80.73.150 (hop 4) is showing 100 percent packet loss but traffic is still getting to the server at 172.16.17.11 (hop 5). This indicates the router at 10.80.73.150 is not responding to ICMP traffic. The packet loss between the source and 192.168.5.1 is due to the packet loss on the previous network segment. There is no packet loss to 192.168.7.1.",
+      "The segment between 192.168.7.1 and 192.168.5.1 is most likely the problem. The results show packet loss of 14 percent on this segment. The router at 10.80.73.150 (hop 4) is showing 100 percent packet loss but traffic is still getting to the server at 172.16.17.11 (hop 5). This indicates the router at 10.80.73.150 is not responding to ICMP traffic. The packet loss between the source and 192.168.5.1 is due to the packet loss on the previous network segment. There is no packet loss to 192.168.7.1.",
     options: [
       "A. The router with the IP address of 10.80.73.150",
       "B. The router with the IP address of 192.168.5.1",
@@ -109,7 +109,7 @@ let questions = [
   {
     numb: 10,
     question:
-      "You're troubleshooting a connectivity issue with a server that has an IP address of 192.168.1.10 from your Linux system. The server does not respond to the ping command. but you suspect that a router is blocking the ping traffic. Which of the following choices would you use to verify the server is responding to traffic?",
+      "You're troubleshooting a connectivity issue with a server that has an IP address of 192.168.1.10 from your Linux system. The server does not respond to the ping command, but you suspect that a router is blocking the ping traffic. Which of the following choices would you use to verify the server is responding to traffic?",
     answer: "A. hping",
     explanation:
       "The hping command can be used in place of the ping command when network devices are blocking ping commands using Internet Control Message Protocol (ICMP) traffic. It can send packets using TCP and other protocols instead of ICMP. The ipconfig command is used to view TCP/IP configuration information. Netstat shows active connections and network statistics. The arp command shows the contents of the arp cache and does not use echo commands.",
@@ -130,7 +130,7 @@ let questions = [
       "You want to verify that the syslog file is being rotated successfully on a Linux system. Which of the following commands is the BEST choice to use?",
     answer: "D. head",
     explanation:
-      "The head command shows the first 10 lines (by default) of a log file, and if the log is being rotated properly, one of the first log entries indicates the logrotate.service has succeeded. Rotating the log copies the current log, erases the log, and starts logging new entries at the beginning of every day.The logger command is used to add entries into the syslog file. It doesn't read the file. The cat command (short for concatenate) displays the entire contents of a file but scrolls past the first entries very quickly making them difficult to catch. The tail command shows the last 10 lines (by default) of a log file, and is unlikely to include the first entries showing that the logrotate.service succeeded.",
+      "The head command shows the first 10 lines (by default) of a log file, and if the log is being rotated properly, one of the first log entries indicates the logrotate.service has succeeded. Rotating the log copies the current log, erases the log, and starts logging new entries at the beginning of every day. The logger command is used to add entries into the syslog file. It doesn't read the file. The cat command (short for concatenate) displays the entire contents of a file but scrolls past the first entries very quickly making them difficult to catch. The tail command shows the last 10 lines (by default) of a log file, and is unlikely to include the first entries showing that the logrotate.service succeeded.",
     options: ["A. logger", "B. cat", "C. tail", "D. head"],
   },
   {
@@ -145,10 +145,10 @@ let questions = [
   {
     numb: 14,
     question:
-      "Maggie needs access to the project.doc file available on a Linux server. Lisa, a system administrator responsible for this server, sees the following permissions for the file: rwx rw- --- What should Lisa use to grant Maggie read access to the file?",
+      "Maggie needs access to the project.doc file available on a Linux server. Lisa, a system administrator responsible for this server, sees the following permissions for the file: rwx rw- ---. What should Lisa use to grant Maggie read access to the file?",
     answer: "A. chmod",
     explanation:
-      "The system administrator should modify permissions with the chmod (short for change mode) command. The journalctl command queries the Linux system logging utility (journald) and displays log entries from several sources. The cat command (short for concatenate) displays file contents. LAMP is an acronym for Linux, Apache, MySQL, and PHP (orPerl or Python).",
+      "The system administrator should modify permissions with the chmod (short for change mode) command. The journalctl command queries the Linux system logging utility (journald) and displays log entries from several sources. The cat command (short for concatenate) displays file contents. LAMP is an acronym for Linux, Apache, MySQL, and PHP (or Perl or Python).",
     options: ["A. chmod", "B. journalctl", "C. cat", "D. LAMP"],
   },
   {

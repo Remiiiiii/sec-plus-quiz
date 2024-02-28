@@ -61,7 +61,6 @@ tryAgainBtn.onclick = () => {
 };
 
 homeBtn.onclick = () => {
-  startOver();
   homeAudio.play();
   quizSection.classList.remove("active");
   nextBtn.classList.remove("active");
@@ -97,38 +96,12 @@ nextBtn.onclick = () => {
   }
 };
 
-function startOver() {
-  correctAnswerCount = 0; // Reset the correct answer count
-  selectedAnswers = []; // Reset the selected answers
-  questionCount = 0;
-  questionNumb = 1;
-  userScore = 0;
-
-  // Reset the option elements and remove classes
-  const options = document.querySelectorAll(".option");
-  options.forEach((option) => {
-    option.classList.remove("correct");
-    option.classList.remove("incorrect");
-    option.classList.remove("disabled");
-  });
-
-  // Hide the result box and show the quiz box
-  resultBox.classList.remove("active");
-  quizBox.classList.add("active");
-
-  showQuestions(questionCount);
-  questionCounter(questionNumb);
-  headerScore();
-}
-
 const optionList = document.querySelector(".option-list");
 
 function showQuestions(index) {
   const questionText = document.querySelector(".question-text");
   questionText.textContent = `${questions[index].numb}. ${questions[index].question}`;
-
   quizBox.style.width = "50%";
-
   let optionTag = "";
 
   for (let i = 0; i < questions[index].options.length; i++) {
@@ -142,10 +115,6 @@ function showQuestions(index) {
     option[i].setAttribute("onclick", "optionSelected(this)");
   }
 }
-
-// Add a variable to keep track of selected answers for the current question
-let selectedAnswers = [];
-let correctAnswerCount = 0;
 
 function optionSelected(answer) {
   let userAnswer = answer.textContent;
@@ -233,6 +202,34 @@ function optionSelected(answer) {
     }
   }
 }
+
+function startOver() {
+  correctAnswerCount = 0; // Reset the correct answer count
+  selectedAnswers = []; // Reset the selected answers
+  questionCount = 0;
+  questionNumb = 1;
+  userScore = 0;
+
+  // Reset the option elements and remove classes
+  const options = document.querySelectorAll(".option");
+  options.forEach((option) => {
+    option.classList.remove("correct");
+    option.classList.remove("incorrect");
+    option.classList.remove("disabled");
+  });
+
+  // Hide the result box and show the quiz box
+  resultBox.classList.remove("active");
+  quizBox.classList.add("active");
+
+  showQuestions(questionCount);
+  questionCounter(questionNumb);
+  headerScore();
+}
+
+// Add a variable to keep track of selected answers for the current question
+let selectedAnswers = [];
+let correctAnswerCount = 0;
 
 function questionCounter(index) {
   const questionTotal = document.querySelector(".question-total");
