@@ -24,7 +24,7 @@ let questions = [
       "A. Supporting confidentiality",
       "B. Supporting integrity",
       "C. Supporting encryption",
-      "D. Supporing availability",
+      "D. Supporting availability",
     ],
   },
   {
