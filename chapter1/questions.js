@@ -45,7 +45,7 @@ let questions = [
       "Elasticity is the best choice because it allows the server to dynamically scale up or out as needed in response to high resource usage. Scalability isn't the best answer because it is done manually, however, the high resource usage is random and manually adding resources can't respond to the random spikes quick enough. Normalization refers to organizing tables and columns in a database to reduce redundant data and improve overall database performance. Stored procedures are a group of SQL statements that execute as a whole and help prevent SQL injection attacks.",
     options: [
       "A. Elasticity",
-      "B. Scalibility",
+      "B. Scalability",
       "C. Normalization",
       "D. Stored Procedure",
     ],
